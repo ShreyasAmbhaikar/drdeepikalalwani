@@ -1,13 +1,43 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import PageHeader from "@/components/landing/PageHeader";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Award, Heart, ShieldCheck, Sparkles, Stethoscope, Baby, Activity, Calendar } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata = {
-  title: "About Dr. Poonam's Women's Clinic | Gynecologist in Keshav Nagar & Mundhwa",
-  description: "Meet Dr. Poonam (MBBS, DGO, PGDMCH), Senior Consultant Obstetrician & Gynecologist with 15+ years of experience at Dr. Poonam's Women's Clinic. Providing trusted, clinical excellence in Keshav Nagar & Mundhwa, Pune.",
+  title: "About Dr. Deepika Lalwani | Senior Gynecologist & Obstetrician in Kalyani Nagar Pune",
+  description: "Learn about Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai, 10+ yrs exp), leading female Obstetrician & Gynecologist in Kalyani Nagar & Wadgaon Sheri, Pune. Dedicated to compassionate maternity, normal delivery, PCOS reversal & fertility care.",
+  keywords: [
+    "Dr Deepika Lalwani",
+    "About Dr Deepika Lalwani Gynecologist",
+    "Best Gynecologist in Kalyani Nagar Pune",
+    "Lady Gynecologist in Wadgaon Sheri",
+    "Obstetrician near New Kalyani Nagar",
+    "MBBS DGO Mumbai Gynecologist Pune",
+    "Normal Delivery Doctor Pune",
+    "PCOD PCOS Specialist Kalyani Nagar",
+    "Infertility and IUI Specialist Pune",
+    "The Collection by Brahma Corp Clinic"
+  ],
   alternates: {
     canonical: "/about-us/",
+  },
+  openGraph: {
+    title: "About Dr. Deepika Lalwani | Senior Gynecologist & Obstetrician in Kalyani Nagar Pune",
+    description: "Senior Consultant Obstetrician & Gynecologist with 10+ years experience in New Kalyani Nagar, Pune. Expert in normal delivery, high-risk pregnancy, PCOS, and fertility care.",
+    url: `${siteConfig.url}/about-us/`,
+    siteName: "Dr. Deepika Lalwani's Clinic",
+    images: [
+      {
+        url: "/images/dr-deepika-lalwani-portrait.webp",
+        width: 800,
+        height: 600,
+        alt: "Dr. Deepika Lalwani(Nagwani) - Obstetrician & Gynecologist in Pune",
+      }
+    ],
+    locale: "en_IN",
+    type: "profile",
   },
 };
 
@@ -17,183 +47,281 @@ export default function AboutUsPage() {
     { label: "About Us" },
   ];
 
+  const clinicalPillars = [
+    {
+      icon: <Baby className="w-8 h-8 text-accent" />,
+      title: "Maternity & Normal Delivery",
+      desc: "Dedicated prenatal coaching, continuous labor monitoring, and evidence-based birth protocols supporting natural vaginal delivery and safe postpartum recovery."
+    },
+    {
+      icon: <Activity className="w-8 h-8 text-accent" />,
+      title: "PCOD & Hormonal Health",
+      desc: "Comprehensive diagnostic evaluations, cycle regulation, personalized metabolic lifestyle strategies, and sustainable management of PCOS and ovulatory issues."
+    },
+    {
+      icon: <Sparkles className="w-8 h-8 text-accent" />,
+      title: "Fertility & Pre-Conception",
+      desc: "Couples fertility workups, high-precision follicular tracking, pre-pregnancy counseling, and Intrauterine Insemination (IUI) support in a comforting setting."
+    },
+    {
+      icon: <Stethoscope className="w-8 h-8 text-accent" />,
+      title: "Minimally Invasive Care",
+      desc: "Modern gynecological interventions including diagnostic hysteroscopy, scarless vaginal surgeries, Pap smears, and preventive cancer screenings."
+    }
+  ];
+
   const coreValues = [
     {
       number: "01",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="w-14 h-14 transition-transform duration-500 group-hover:scale-110" fill="none">
-          <path d="M22 10C35 8 54 14 56 28C58 42 46 54 32 56C18 58 10 46 8 32C6 18 9 12 22 10Z" className="fill-[#5A4A66]/5 group-hover:fill-[#e87c7c]/10 transition-colors duration-300" />
-          <path d="M32 46C20 38 16 30 16 23C16 16.5 21 12 27 12C30.5 12 33.5 14.5 35 17C36.5 14.5 39.5 12 43 12C49 12 54 16.5 54 23C54 30 50 38 38 46L35 49L32 46Z" stroke="#5A4A66" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M24 23C24 23 27 27 35 27C43 27 46 23 46 23" stroke="#e87c7c" strokeWidth="2" strokeLinecap="round" />
-          <circle cx="35" cy="20" r="3" className="fill-[#e87c7c]" />
-        </svg>
-      ),
-      title: "Patient-First Care",
-      desc: "Every healthcare journey is deeply personal. We customize every treatment plan around your physical comfort and emotional wellbeing.",
+      icon: <Heart className="w-10 h-10 text-accent" />,
+      title: "Unhurried, Empathetic Listening",
+      desc: "We dedicate ample time to every consultation, ensuring your symptoms, lifestyle, and emotional comfort are thoroughly understood without judgment."
     },
     {
       number: "02",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="w-14 h-14 transition-transform duration-500 group-hover:scale-110" fill="none">
-          <path d="M18 12C32 6 48 10 54 22C60 34 56 48 42 54C28 60 14 52 10 38C6 24 4 18 18 12Z" className="fill-[#5A4A66]/5 group-hover:fill-[#e87c7c]/10 transition-colors duration-300" />
-          <circle cx="28" cy="32" r="14" stroke="#5A4A66" strokeWidth="2.2" strokeDasharray="3 2" />
-          <circle cx="28" cy="32" r="9" className="fill-[#e87c7c]/10 stroke-[#e87c7c]" strokeWidth="2" />
-          <circle cx="26" cy="30" r="2.5" className="fill-[#e87c7c]" />
-          <circle cx="31" cy="34" r="2" className="fill-[#e87c7c]" />
-          <path d="M56 18L42 29" stroke="#5A4A66" strokeWidth="2.2" strokeLinecap="round" />
-          <path d="M42 29L39 31.2" stroke="#5A4A66" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M6 32H12" stroke="#5A4A66" strokeWidth="2.2" strokeLinecap="round" />
-        </svg>
-      ),
-      title: "Clinical Excellence",
-      desc: "Our clinic offers state-of-the-art diagnostic screening and treatment options for pregnancy care, fertility support, and laparoscopic surgeries.",
+      icon: <Award className="w-10 h-10 text-accent" />,
+      title: "Rigorous Mumbai Clinical Standards",
+      desc: "Trained at premier medical centers in Mumbai (MBBS, DGO), Dr. Deepika adheres strictly to contemporary, evidence-based international clinical guidelines."
     },
     {
       number: "03",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" className="w-14 h-14 transition-transform duration-500 group-hover:scale-110" fill="none">
-          <path d="M20 8C34 6 50 14 52 26C54 38 46 52 32 56C18 60 12 46 10 32C8 18 6 10 20 8Z" className="fill-[#5A4A66]/5 group-hover:fill-[#e87c7c]/10 transition-colors duration-300" />
-          <path d="M32 10L48 15V32C48 42.5 41.5 50 32 54C22.5 50 16 42.5 16 32V15L32 10Z" stroke="#5A4A66" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M24 31L30 37L40 25" stroke="#e87c7c" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      ),
-      title: "Complete Transparency",
-      desc: "No hidden charges or unnecessary testing. We explain every clinical finding clearly so you can make informed decisions with full confidence.",
-    },
+      icon: <ShieldCheck className="w-10 h-10 text-accent" />,
+      title: "Ethical & Transparent Guidance",
+      desc: "Clear, transparent communication on all diagnoses, tests, and options, avoiding unnecessary medical or surgical procedures wherever conservative care suffices."
+    }
   ];
+
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": ["AboutPage", "ProfilePage"],
+    "mainEntity": {
+      "@type": "Physician",
+      "name": "Dr. Deepika Lalwani(Nagwani)",
+      "jobTitle": "Consultant Obstetrician & Gynecologist",
+      "medicalSpecialty": ["Obstetrics", "Gynecology", "ReproductiveHealth"],
+      "alumniOf": "Mumbai University Medical College",
+      "description": "Senior Consultant Obstetrician & Gynecologist (MBBS, DGO Mumbai) with 10+ years of clinical excellence in New Kalyani Nagar and Wadgaon Sheri, Pune.",
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "name": "Dr. Deepika Lalwani's Clinic",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Wadgaon Sheri",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411014",
+          "addressCountry": "IN"
+        }
+      }
+    }
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       <main>
-        <PageHeader title="About Us" breadcrumbs={breadcrumbs} />
+        <PageHeader title="About Dr. Deepika Lalwani" breadcrumbs={breadcrumbs} />
 
-        {/* Section 1: Clinic Story */}
-        <section className="py-[80px] lg:py-[120px] bg-background">
+        {/* Section 1: Doctor Introduction & Practice Story */}
+        <section className="py-[75px] lg:py-[105px] bg-background">
           <div className="container mx-auto px-4 max-w-[1320px]">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px] lg:gap-[80px] items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-[36px] lg:gap-[60px] items-center">
               
               {/* Left Content */}
-              <div>
-                <h4 className="text-accent text-[16px] font-bold tracking-wider uppercase mb-3">About Our Clinic</h4>
-                <h2 className="text-[36px] md:text-[46px] font-bold text-primary mb-6 leading-[1.2]">
-                  Dedicated to providing compassionate women's healthcare
-                </h2>
-                <div className="text-text space-y-4 mb-8">
-                  <p>
-                    At <strong>Dr. Poonam's Women's Clinic</strong>, we believe every woman deserves access to safe, empathetic, and premium healthcare. Located in <strong>Keshav Nagar</strong> and serving the wider <strong>Mundhwa</strong> area in Pune, our facility provides state-of-the-art diagnostic screening and treatment options tailored to support you through every stage of life. Our practice is built on a foundation of clinical safety, absolute patient confidentiality, and transparent pricing.
-                  </p>
-                  <p>
-                    Our clinical director, <strong>Dr. Poonam</strong>, is a board-certified <strong>Senior Consultant Obstetrician & Gynecologist</strong> with <strong>over 15 years of dedicated practice</strong>. Bringing extensive experience in managing high-risk pregnancies, normal deliveries, and reproductive concerns, she works alongside a caring team to deliver patient-centered care. From PCOS therapies and pre-conceptional planning to advanced laparoscopic procedures, we are here to guide your health journey with absolute peace of mind.
-                  </p>
-                </div>
-                
-                {/* Mobile-only Image (above the checks) */}
-                <div className="block lg:hidden mb-8">
-                  <img
-                    src="/images/doctor-consultation-desk.webp"
-                    alt="Dr. Poonam at her consultation desk inside Dr. Poonam's Women's Clinic"
-                    className="w-full h-auto rounded-[30px] shadow-xl"
-                    loading="lazy"
-                  />
+              <div className="lg:col-span-7">
+                <div className="flex items-center gap-2 mb-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-accent"></span>
+                  <span className="text-[12.5px] md:text-[13.5px] font-bold tracking-[0.15em] text-accent uppercase">
+                    CONSULTANT OBSTETRICIAN &amp; GYNECOLOGIST
+                  </span>
                 </div>
 
-                {/* Check list */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-3">
+                <h1 className="text-[30px] md:text-[42px] font-extrabold text-primary mb-5 leading-[1.2]">
+                  Devoted to Elevating Women&apos;s Health Across Every Stage of Life
+                </h1>
+
+                <div className="text-text space-y-4 mb-7 text-[15px] md:text-[16px] leading-[1.7em]">
+                  <p>
+                    <strong>Dr. Deepika Lalwani(Nagwani)</strong> is a distinguished Consultant Obstetrician and Gynecologist holding <strong>MBBS and DGO (Mumbai)</strong> with <strong>over 10 years of specialized clinical experience</strong>. Practicing from her state-of-the-art clinic at <strong>The Collection by Brahma Corp, New Kalyani Nagar</strong>, Dr. Deepika is widely recognized for combining clinical excellence with deeply compassionate, patient-centered care.
+                  </p>
+                  <p>
+                    Her practice serves as a trusted healthcare home for women and families across <strong>Kalyani Nagar, Wadgaon Sheri, Chandan Nagar, Viman Nagar, Kharadi, and Koregaon Park</strong>. From guiding first-time expectant mothers through safe normal deliveries to helping women manage complex hormonal conditions like PCOS and fertility challenges, she provides thoughtful, science-backed solutions tailored to each patient.
+                  </p>
+                </div>
+
+                {/* Checklist Highlights */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-7">
+                  <div className="flex items-center gap-2.5 bg-white p-3 rounded-[14px] border border-purple-100/80 shadow-xs">
                     <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                    <span className="font-semibold text-primary">+15 Years of Experience</span>
+                    <span className="font-semibold text-[14px] text-primary">10+ Years Specialized Experience</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2.5 bg-white p-3 rounded-[14px] border border-purple-100/80 shadow-xs">
                     <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                    <span className="font-semibold text-primary">Normal Delivery Specialist</span>
+                    <span className="font-semibold text-[14px] text-primary">Mumbai-Trained Clinical Standards</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2.5 bg-white p-3 rounded-[14px] border border-purple-100/80 shadow-xs">
                     <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                    <span className="font-semibold text-primary">Infertility, IUI & IVF Guidance</span>
+                    <span className="font-semibold text-[14px] text-primary">Normal Vaginal Delivery Advocate</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2.5 bg-white p-3 rounded-[14px] border border-purple-100/80 shadow-xs">
                     <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                    <span className="font-semibold text-primary">Laparoscopic Procedures</span>
+                    <span className="font-semibold text-[14px] text-primary">Comprehensive PCOS &amp; Fertility Care</span>
                   </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <Link
+                    href="/contact-us"
+                    className="inline-flex items-center gap-2.5 gradient-purple-cta text-white font-bold text-[14.5px] px-[24px] py-[12px] rounded-[11px] shadow-[0_4px_15px_rgba(124,37,184,0.3)] hover:brightness-110 transition-all duration-300"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    <span>Book a Consultation</span>
+                  </Link>
+                  <a
+                    href={`tel:${siteConfig.contact.phoneRaw}`}
+                    className="inline-flex items-center gap-2 text-primary font-bold text-[14.5px] px-[20px] py-[11px] rounded-[11px] border border-purple-200 hover:bg-purple-50 transition-colors duration-200"
+                  >
+                    Call: {siteConfig.contact.phone}
+                  </a>
                 </div>
               </div>
 
               {/* Right Image */}
-              <div className="hidden lg:block relative">
-                <img
-                  src="/images/doctor-consultation-desk.webp"
-                  alt="Dr. Poonam at her consultation desk inside Dr. Poonam's Women's Clinic"
-                  className="w-full h-auto rounded-[30px] shadow-xl"
-                  loading="lazy"
-                />
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2: Doctor Profile */}
-        <section className="py-[80px] lg:py-[120px] bg-secondary">
-          <div className="container mx-auto px-4 max-w-[1320px]">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] lg:gap-[60px] items-center">
-              
-              {/* Doctor Image */}
-              <div className="hidden lg:flex lg:col-span-5 justify-center">
-                <div className="relative w-full max-w-[400px] aspect-[4/5] rounded-[30px] overflow-hidden shadow-lg border-4 border-white">
+              <div className="lg:col-span-5 flex justify-center">
+                <div className="relative w-full max-w-[420px] aspect-[4/4.8] rounded-[28px] overflow-hidden shadow-xl border-4 border-white bg-purple-50">
                   <Image
-                    src="/images/about-doctor-poonam.webp"
-                    alt="Dr. Poonam"
+                    src="/images/dr-deepika-lalwani-portrait.webp"
+                    alt="Dr. Deepika Lalwani(Nagwani) - Best Gynecologist in Kalyani Nagar & Wadgaon Sheri Pune"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 420px"
                   />
-                </div>
-              </div>
-
-              {/* Doctor Details */}
-              <div className="lg:col-span-7">
-                <h4 className="text-accent text-[16px] font-bold tracking-wider uppercase mb-3">Meet Our Expert</h4>
-                <h2 className="text-[36px] md:text-[44px] font-bold text-primary mb-2">Dr. Poonam</h2>
-                <p className="text-[18px] text-accent font-semibold mb-6">Senior Consultant Obstetrician & Gynecologist</p>
-                
-                {/* Mobile-only Doctor Image */}
-                <div className="flex justify-center mb-6 lg:hidden">
-                  <div className="relative w-full aspect-[4/5] rounded-[30px] overflow-hidden shadow-lg border-4 border-white">
-                    <Image
-                      src="/images/about-doctor-poonam.webp"
-                      alt="Dr. Poonam"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-[18px] p-3.5 border border-purple-100 shadow-md">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-[13.5px] font-bold text-primary mb-0.5">Dr. Deepika Lalwani(Nagwani)</p>
+                        <p className="text-[11.5px] text-accent font-semibold">MBBS, DGO (Mumbai)</p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-[13.5px] font-bold text-[#FF9E00]">★ 4.9 Rating</p>
+                        <p className="text-[11px] text-[#777]">105+ Reviews</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
-                {/* Qualifications box */}
-                <div className="bg-white rounded-[20px] p-6 border border-divider/10 shadow-sm mb-6">
-                  <h5 className="text-[18px] font-bold text-primary mb-4 border-b border-divider/20 pb-2">Academic Qualifications & Credentials</h5>
-                  <ul className="space-y-3 text-text">
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0"></span>
-                      <span><strong>MBBS</strong> – Professional Medical Degree</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0"></span>
-                      <span><strong>DGO</strong> – Diploma in Gynaecology and Obstetrics</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0"></span>
-                      <span><strong>PGDMCH</strong> – Post Graduate Diploma in Maternal and Child Health</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0"></span>
-                      <span><strong>Over 15 Years</strong> of specialized clinical practice in Obstetric and Gynecological Care</span>
-                    </li>
-                  </ul>
-                </div>
+              </div>
 
-                <div className="text-text italic border-l-4 border-accent pl-4 py-1 leading-[1.6]">
-                  <p>
-                    &ldquo;Our mission at Dr Poonam's Women's Clinic is simple: to combine clinical excellence with warm, personalized attention. We walk alongside every woman to ensure her safety, comfort, and wellbeing at every milestone.&rdquo;
-                  </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 2: Four Core Clinical Pillars */}
+        <section className="py-[75px] lg:py-[105px] bg-secondary/70">
+          <div className="container mx-auto px-4 max-w-[1320px]">
+            <div className="text-center max-w-[680px] mx-auto mb-[45px]">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-accent"></span>
+                <span className="text-accent text-[13px] font-bold tracking-wider uppercase">Areas of Specialized Focus</span>
+              </div>
+              <h2 className="text-[28px] md:text-[40px] font-extrabold text-primary leading-tight">
+                Comprehensive, evidence-based care tailored for women
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {clinicalPillars.map((pillar, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white p-6 rounded-[22px] border border-purple-100/80 shadow-[0_6px_24px_rgba(45,10,78,0.04)] hover:shadow-[0_12px_32px_rgba(45,10,78,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="w-13 h-13 rounded-2xl bg-purple-50 flex items-center justify-center mb-4 text-accent">
+                      {pillar.icon}
+                    </div>
+                    <h3 className="text-[17.5px] font-bold text-primary mb-2.5 leading-snug">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-text text-[13.5px] md:text-[14px] leading-[1.65em]">
+                      {pillar.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: Academic Credentials & Hospital Affiliations */}
+        <section className="py-[75px] lg:py-[105px] bg-background">
+          <div className="container mx-auto px-4 max-w-[1320px]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              
+              <div className="lg:col-span-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-accent"></span>
+                  <span className="text-accent text-[13px] font-bold tracking-wider uppercase">Medical Qualifications</span>
+                </div>
+                <h2 className="text-[28px] md:text-[38px] font-extrabold text-primary mb-4 leading-tight">
+                  Solid academic foundation &amp; extensive clinical background
+                </h2>
+                <p className="text-text text-[15px] leading-relaxed mb-6">
+                  Dr. Deepika Lalwani completed rigorous medical graduation and post-graduate obstetrics &amp; gynecology training in Mumbai. She continuously integrates the latest advances in reproductive medicine, fetal health surveillance, and minimally invasive techniques into everyday clinical consultations.
+                </p>
+                <div className="bg-white rounded-[20px] p-6 border border-purple-100/90 shadow-sm space-y-3.5">
+                  <div className="flex items-start gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-accent mt-1.5 shrink-0"></span>
+                    <div>
+                      <h4 className="text-[15px] font-bold text-primary">MBBS (Bachelor of Medicine &amp; Bachelor of Surgery)</h4>
+                      <p className="text-[13px] text-text">Comprehensive foundation across medical sciences, pathology, and general surgical care.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-accent mt-1.5 shrink-0"></span>
+                    <div>
+                      <h4 className="text-[15px] font-bold text-primary">DGO Mumbai (Diploma in Gynaecology and Obstetrics)</h4>
+                      <p className="text-[13px] text-text">Specialized post-graduate training in advanced maternal-fetal medicine, labor management, and operative gynecology.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-accent mt-1.5 shrink-0"></span>
+                    <div>
+                      <h4 className="text-[15px] font-bold text-primary">Hospital Network &amp; Cashless Claims</h4>
+                      <p className="text-[13px] text-text">Affiliated with premier tertiary care hospitals across Pune for cashless deliveries and major laparoscopic surgeries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-6">
+                <div className="bg-gradient-to-br from-[#3D145A] to-[#2D0E44] rounded-[28px] p-8 md:p-10 text-white shadow-xl relative overflow-hidden">
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="w-2 h-2 rounded-full bg-[#FFB800]"></span>
+                      <span className="text-[12px] font-bold tracking-[0.14em] text-purple-200 uppercase">
+                        PATIENT TRUST &amp; EXCELLENCE
+                      </span>
+                    </div>
+                    <h3 className="text-[24px] md:text-[28px] font-extrabold !text-white mb-4 leading-snug drop-shadow-sm">
+                      Recognized as a leading female gynecologist in Pune
+                    </h3>
+                    <p className="!text-white/90 text-[14.5px] leading-relaxed mb-6 font-normal">
+                      With over 105+ verified 5-star Google reviews (4.9 Rating), patients consistently praise Dr. Deepika Lalwani for her calm disposition, detailed diagnostic explanations, and supportive care during stressful medical moments.
+                    </p>
+                    <div className="grid grid-cols-2 gap-4 border-t border-white/15 pt-5">
+                      <div>
+                        <p className="text-[32px] font-extrabold text-[#FFD700] leading-none mb-1">10+</p>
+                        <p className="text-[12.5px] text-white/80">Years Clinical Practice</p>
+                      </div>
+                      <div>
+                        <p className="text-[32px] font-extrabold text-[#FFD700] leading-none mb-1">4.9 ★</p>
+                        <p className="text-[12.5px] text-white/80">Google Rating (105+ Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -201,38 +329,32 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        {/* Section 3: Core Values */}
-        <section className="py-[80px] lg:py-[120px] bg-[#FAF7F4]">
+        {/* Section 4: Core Values */}
+        <section className="py-[75px] lg:py-[105px] bg-secondary/70">
           <div className="container mx-auto px-4 max-w-[1320px]">
-            <div className="text-center max-w-[600px] mx-auto mb-[60px]">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#e87c7c]"></span>
-                <span className="text-accent text-[16px] font-bold tracking-wider uppercase">Our Standards</span>
+            <div className="text-center max-w-[620px] mx-auto mb-[45px]">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-accent"></span>
+                <span className="text-accent text-[13px] font-bold tracking-wider uppercase">Our Core Philosophy</span>
               </div>
-              <h2 className="text-[32px] md:text-[44px] font-bold text-primary leading-tight">Core values that guide our practice</h2>
+              <h2 className="text-[28px] md:text-[40px] font-extrabold text-primary leading-tight">
+                Guiding principles behind every patient interaction
+              </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {coreValues.map((val, idx) => (
                 <div 
                   key={idx} 
-                  className="group relative overflow-hidden bg-white p-8 md:p-10 rounded-[32px] border border-divider/10 shadow-[0_10px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(90,74,102,0.09)] hover:-translate-y-2 transition-all duration-500 ease-out"
+                  className="bg-white p-7 md:p-8 rounded-[24px] border border-purple-100/80 shadow-[0_6px_24px_rgba(45,10,78,0.03)] hover:shadow-[0_14px_36px_rgba(45,10,78,0.08)] hover:-translate-y-1 transition-all duration-300 relative"
                 >
-                  {/* Interactive left accent border */}
-                  <div className="absolute left-0 top-0 bottom-0 w-[5px] bg-[#e87c7c]/30 group-hover:bg-accent group-hover:w-[8px] transition-all duration-300"></div>
-
-                  {/* Faded background serial number */}
-                  <div className="text-[84px] font-extrabold text-[#5A4A66]/5 absolute right-6 top-2 select-none group-hover:text-[#5A4A66]/9 transition-colors duration-500 pointer-events-none font-sans">
+                  <div className="text-[54px] font-black text-purple-900/5 absolute right-4 top-2 select-none pointer-events-none">
                     {val.number}
                   </div>
-
-                  {/* Corner glow element */}
-                  <div className="absolute -right-10 -bottom-10 w-28 h-28 rounded-full bg-[#e87c7c]/5 group-hover:bg-[#e87c7c]/10 group-hover:scale-150 transition-all duration-700 blur-xl pointer-events-none"></div>
-
                   <div className="relative z-10">
-                    <div className="mb-8 inline-block">{val.icon}</div>
-                    <h3 className="text-[22px] font-bold text-primary mb-3.5 group-hover:text-accent transition-colors duration-300">{val.title}</h3>
-                    <p className="text-text leading-[1.65] text-[15px] group-hover:text-text/95 transition-colors duration-300">{val.desc}</p>
+                    <div className="mb-4 inline-block">{val.icon}</div>
+                    <h3 className="text-[18px] font-bold text-primary mb-2">{val.title}</h3>
+                    <p className="text-text leading-[1.65] text-[13.5px] md:text-[14px]">{val.desc}</p>
                   </div>
                 </div>
               ))}

@@ -1,155 +1,198 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 const QUICK_LINKS = [
-  { label: "Home", href: "/best-gynecologist-in-keshav-nagar/" },
+  { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery/" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
-const OUR_SERVICES = [
-  { label: "Normal Delivery", href: "/normal-delivery-in-keshav-nagar/" },
-  { label: "LSCS (Caesarean Section)", href: "/lscs-caesarean-section-in-keshav-nagar/" },
-  { label: "Infertility, IUI & IVF", href: "/infertility-iui-ivf-in-keshav-nagar/" },
-  { label: "Scarless Hysterectomy (NDVH)", href: "/scarless-hysterectomy-in-keshav-nagar/" },
-  { label: "PCOD / PCOS Care", href: "/pcod-pcos-care-in-keshav-nagar/" },
-  { label: "Cervical Cancer Vaccine", href: "/cervical-cancer-vaccination-screening-in-keshav-nagar/" },
-  { label: "Pre Conceptional Counselling", href: "/pre-conceptional-counselling-in-keshav-nagar/" },
-  { label: "MTP, D & E Services", href: "/mtp-d-e-services-in-keshav-nagar/" },
-  { label: "Tubal Ligation & Reversal", href: "/tubal-ligation-reversal-in-keshav-nagar/" },
-  { label: "Laparoscopic Procedures", href: "/laparoscopic-procedures-in-keshav-nagar/" },
-  { label: "Hysteroscopy", href: "/hysteroscopy-in-keshav-nagar/" },
-  { label: "Pregnancy Care", href: "/pregnancy-care-in-keshav-nagar/" },
-  { label: "High Risk Pregnancy Management", href: "/high-risk-pregnancy-management-in-keshav-nagar/" },
-  { label: "Pubertal Counselling", href: "/pubertal-counselling-in-keshav-nagar/" },
-  { label: "Menstrual Hygiene", href: "/menstrual-hygiene-in-keshav-nagar/" },
-  { label: "Contraception Advice", href: "/contraception-advice-in-keshav-nagar/" },
-  { label: "Lactational Counselling", href: "/lactational-counselling-in-keshav-nagar/" },
-  { label: "Family Planning Center", href: "/family-planning-center-in-keshav-nagar/" },
-  { label: "Pelvic Infections", href: "/pelvic-infections-treatment-in-keshav-nagar/" },
-  { label: "Cancer Screening", href: "/cancer-screening-in-keshav-nagar/" },
-  { label: "Addressing Menstrual Cycle Problems", href: "/menstrual-cycle-problems-in-keshav-nagar/" },
+const SERVICES_COL_1 = [
+  { label: "Normal Delivery", href: "/normal-delivery-in-kalyani-nagar" },
+  { label: "Infertility, IUI & IVF", href: "/infertility-iui-ivf-in-kalyani-nagar" },
+  { label: "PCOD / PCOS Care", href: "/pcod-pcos-care-in-kalyani-nagar" },
+  { label: "Pre Conceptional Counselling", href: "/pre-conceptional-counselling-in-kalyani-nagar" },
+  { label: "Tubal Ligation & Reversal", href: "/tubal-ligation-reversal-in-kalyani-nagar" },
+  { label: "Hysteroscopy", href: "/hysteroscopy-in-kalyani-nagar" },
+  { label: "High Risk Pregnancy Management", href: "/high-risk-pregnancy-management-in-kalyani-nagar" },
+  { label: "Menstrual Hygiene", href: "/menstrual-hygiene-in-kalyani-nagar" },
+  { label: "Lactational Counselling", href: "/lactational-counselling-in-kalyani-nagar" },
+  { label: "Pelvic Infections", href: "/pelvic-infections-treatment-in-kalyani-nagar" },
+  { label: "Addressing Menstrual Cycle Problems", href: "/menstrual-cycle-problems-in-kalyani-nagar" },
+];
+
+const SERVICES_COL_2 = [
+  { label: "LSCS (Caesarean Section)", href: "/lscs-caesarean-section-in-kalyani-nagar" },
+  { label: "Scarless Hysterectomy (NDVH)", href: "/scarless-hysterectomy-in-kalyani-nagar" },
+  { label: "Cervical Cancer Vaccine", href: "/cervical-cancer-vaccination-screening-in-kalyani-nagar" },
+  { label: "MTP, D & E Services", href: "/mtp-d-e-services-in-kalyani-nagar" },
+  { label: "Laparoscopic Procedures", href: "/laparoscopic-procedures-in-kalyani-nagar" },
+  { label: "Pregnancy Care", href: "/pregnancy-care-in-kalyani-nagar" },
+  { label: "Pubertal Counselling", href: "/pubertal-counselling-in-kalyani-nagar" },
+  { label: "Contraception Advice", href: "/contraception-advice-in-kalyani-nagar" },
+  { label: "Family Planning Center", href: "/family-planning-center-in-kalyani-nagar" },
+  { label: "Cancer Screening", href: "/cancer-screening-in-kalyani-nagar" },
 ];
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary pt-[100px] text-white">
-      <div className="container mx-auto max-w-[1300px] px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-[40px] lg:gap-[30px] mb-[60px]">
-          {/* Logo & About */}
-          <div className="flex flex-col gap-6 lg:col-span-3">
-            <Link href="/best-gynecologist-in-keshav-nagar/" prefetch={false} className="flex items-center gap-3 shrink-0">
+    <footer className="gradient-dark-section pt-[95px] pb-8 text-white relative overflow-hidden z-10">
+      {/* Background Ambient Radial Glows */}
+      <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-purple-400/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-purple-900/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto max-w-[1300px] px-4 relative z-10">
+        
+        {/* Main 4-Column Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-[45px] lg:gap-[40px] mb-[65px]">
+          
+          {/* Column 1: Brand & Clinic Bio (span 3) */}
+          <div className="flex flex-col gap-4 lg:col-span-3">
+            <Link href="/" prefetch={false} className="flex items-center gap-3.5 md:gap-4 shrink-0 group">
               <Image
-                src="/images/logo-emblem-1.webp"
-                alt="Dr Poonam's Women's Clinic"
-                width={72}
-                height={72}
-                className="w-16 h-16 md:w-[72px] md:h-[72px] object-contain"
+                src="/images/logo-emblem-light.svg"
+                alt="Dr. Deepika Lalwani(Nagwani)"
+                width={60}
+                height={60}
+                className="h-12 md:h-14 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="flex flex-col text-left justify-center">
-                <span className="text-[14px] md:text-[17px] font-extrabold text-white tracking-wide leading-none font-onest uppercase">DR. POONAM'S</span>
-                <span className="text-[10px] md:text-[12px] font-bold text-accent-secondary tracking-wider leading-none mt-1.5 font-onest uppercase">WOMEN'S CLINIC</span>
+              <div className="flex flex-col text-left justify-center select-none gap-1.5 md:gap-2">
+                <span className="text-[18px] md:text-[21px] font-[850] text-white tracking-[0.06em] uppercase font-outfit leading-none">
+                  Dr. Deepika
+                </span>
+                <span className="text-[12.5px] md:text-[14px] font-[750] text-[#D8B4FE] tracking-[0.16em] uppercase font-outfit leading-none">
+                  Lalwani (Nagwani)
+                </span>
               </div>
             </Link>
-            <p className="text-white/80 text-[15px] leading-[1.6em]">
-              Dr Poonam's Women's Clinic provides expert obstetric and gynecological care in Keshav Nagar, Pune. Led by Dr. Poonam with +15 years of experience, we specialize in normal delivery, IUI/IVF care, PCOD, and laparoscopic procedures.
+            <p className="text-white/80 text-[14px] leading-[1.7] mt-2">
+              Dr. Deepika Lalwani(Nagwani)&apos;s Clinic is a leading gynecologist clinic in New Kalyani Nagar &amp; Wadgaon Sheri, Pune. Led by Dr. Deepika Lalwani (MBBS, DGO Mumbai), senior obstetrician-gynecologist, offering expert care in normal delivery, pregnancy care, infertility, IUI, PCOD, and women&apos;s health screening.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="flex flex-col gap-6 lg:col-span-2 lg:pl-4">
-            <h3 className="text-[20px] font-semibold text-white">Quick Links</h3>
+          {/* Column 2: Quick Links (span 2) */}
+          <div className="flex flex-col gap-4 lg:col-span-2 lg:pl-3">
+            <h3 className="text-[19px] font-bold text-white tracking-tight mb-1">Quick Links</h3>
             <ul className="flex flex-col gap-3">
               {QUICK_LINKS.map((link) => (
                 <li key={link.label}>
                   <Link 
                     href={link.href}
                     prefetch={false}
-                    className="text-white/80 hover:text-accent transition-colors duration-300 flex items-center gap-2"
+                    className="text-white/80 hover:text-purple-200 transition-colors duration-200 text-[14px] block"
                   >
-                    <span>{link.label}</span>
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Our Services */}
-          <div className="flex flex-col gap-6 lg:col-span-4">
-            <h3 className="text-[20px] font-semibold text-white">Our Services</h3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 text-[14px]">
-              {OUR_SERVICES.map((link) => (
-                <li key={link.label}>
-                  <Link 
-                    href={link.href}
-                    prefetch={false}
-                    className="text-white/80 hover:text-accent transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <span>{link.label}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Column 3: Our Services (span 4) - 2 Subcolumns */}
+          <div className="flex flex-col gap-4 lg:col-span-4">
+            <h3 className="text-[19px] font-bold text-white tracking-tight mb-1">Our Services</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-3">
+              {/* Sub-column 1 */}
+              <ul className="flex flex-col gap-3">
+                {SERVICES_COL_1.map((item) => (
+                  <li key={item.label}>
+                    <Link 
+                      href={item.href}
+                      prefetch={false}
+                      className="text-white/80 hover:text-purple-200 transition-colors duration-200 text-[13px] leading-snug block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {/* Sub-column 2 */}
+              <ul className="flex flex-col gap-3">
+                {SERVICES_COL_2.map((item) => (
+                  <li key={item.label}>
+                    <Link 
+                      href={item.href}
+                      prefetch={false}
+                      className="text-white/80 hover:text-purple-200 transition-colors duration-200 text-[13px] leading-snug block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-6 lg:col-span-3">
-            <h3 className="text-[20px] font-semibold text-white">Working Hours</h3>
-            <ul className="flex flex-col gap-4 text-white/80">
-              <li className="flex justify-between border-b border-dark-divider pb-3">
-                <span>Monday To Saturday</span>
-                <div className="flex flex-col items-end text-white font-medium text-[14px]">
-                  <span>10:00 - 14:00</span>
-                  <span>18:00 - 21:00</span>
-                </div>
-              </li>
-              <li className="flex justify-between pb-3">
-                <span>Sunday</span>
-                <span className="text-white font-medium">Closed</span>
-              </li>
-            </ul>
-            {/* Doctor Address & Phone interactive links */}
-            <div className="flex flex-col gap-3.5 text-[16px] text-white/80 mt-2">
-              <div className="flex items-start gap-3 leading-normal">
-                <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <div>
-                  <span>Call Doctor: </span>
-                  <a href="tel:09711929529" className="hover:text-accent transition-colors duration-300">097119 29529</a>
-                  <span className="mx-1 text-white/50">/</span>
-                  <a href="tel:08149661830" className="hover:text-accent transition-colors duration-300">081496 61830</a>
+          {/* Column 4: Working Hours & NAP (span 3) */}
+          <div className="flex flex-col gap-4 lg:col-span-3 lg:pl-3">
+            <h3 className="text-[19px] font-bold text-white tracking-tight mb-1">Working Hours</h3>
+            
+            <div className="flex flex-col gap-2 pb-3.5 border-b border-white/15 text-[13px] text-white/90">
+              <div className="flex justify-between items-start">
+                <span className="font-semibold text-white">Mon – Sat:</span>
+                <div className="flex flex-col items-end text-purple-100 font-medium">
+                  <span>10:00 AM – 1:30 PM</span>
+                  <span>6:00 PM – 8:30 PM</span>
                 </div>
               </div>
-              <a 
-                href="https://www.google.com/maps/place/Dr+Poonam's+Women's+Clinic+%7C+Gynecologist/data=!4m2!3m1!1s0x0:0xd39aed6b8c64a153?sa=X&ved=1t:2428&hl=en&ictx=111" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-start gap-3 hover:text-accent transition-colors duration-300 leading-normal"
-              >
-                <svg className="w-5 h-5 text-accent mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <div className="flex justify-between items-center pt-1 border-t border-white/10">
+                <span className="font-semibold text-white">Sunday:</span>
+                <span className="text-purple-100 font-medium">10:00 AM – 1:30 PM</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3.5 text-[13px] text-white/85 mt-1">
+              {/* Call */}
+              <div className="flex items-start gap-2.5">
+                <svg className="w-4 h-4 text-purple-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <div className="flex flex-col">
+                  <span>Call Clinic: <a href={`tel:${siteConfig.contact.phoneRaw}`} className="font-semibold text-white hover:text-purple-200 transition-colors">{siteConfig.contact.phone}</a></span>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-start gap-2.5">
+                <svg className="w-4 h-4 text-purple-300 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Shop No 33, Shopping Complex, Mantra Mesmer Rd, in front of Florida River Bank, Keshav Nagar, Mundhwa, Mundhawa, Pune, Maharashtra 411036</span>
-              </a>
+                <a 
+                  href={siteConfig.contact.mapsLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-purple-200 transition-colors text-white/80 leading-relaxed"
+                >
+                  {siteConfig.contact.address}
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Copyright Bar */}
-      <div className="border-t border-dark-divider py-[30px]">
-        <div className="container mx-auto max-w-[1300px] px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[15px] text-white/80">
-            <p>Copyright © 2026 Dr Poonam's Women's Clinic. All rights reserved.</p>
-            <div>
-              Developed with <span className="text-[#e87c7c] mx-1">❤️</span> by <a href="https://wa.me/919284394722" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent transition-colors duration-300">QuantumReach Media</a>
-            </div>
           </div>
+
         </div>
+
+        {/* Bottom Sub-Footer Bar */}
+        <div className="border-t border-white/15 pt-6 mt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[13px] text-white/70">
+          <p>© {new Date().getFullYear()} Dr. Deepika Lalwani(Nagwani). All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Developed with <span className="text-red-400">❤️</span> by{" "}
+            <a 
+              href="https://quantumbridgemedia.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-purple-300 font-medium hover:underline hover:text-white transition-colors ml-0.5"
+            >
+              QuantumReach Media
+            </a>
+          </p>
+        </div>
+
       </div>
     </footer>
   );

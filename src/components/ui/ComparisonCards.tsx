@@ -22,7 +22,7 @@ export default function ComparisonCards({ title, columns }: ComparisonCardsProps
     switch (theme) {
       case 'accent': return 'bg-accent text-white';
       case 'secondary': return 'bg-secondary text-primary';
-      default: return 'bg-[#242736] text-white';
+      default: return 'bg-primary text-white';
     }
   };
 

@@ -10,27 +10,27 @@ interface ServiceSidebarProps {
 
 export default function ServiceSidebar({ currentPath, hideContact, hideServices, limitServices }: ServiceSidebarProps) {
   const allServices = [
-    { title: 'Normal Delivery', href: '/normal-delivery-in-keshav-nagar/' },
-    { title: 'LSCS (Caesarean Section)', href: '/lscs-caesarean-section-in-keshav-nagar/' },
-    { title: 'Infertility, IUI & IVF', href: '/infertility-iui-ivf-in-keshav-nagar/' },
-    { title: 'Scarless Hysterectomy (NDVH)', href: '/scarless-hysterectomy-in-keshav-nagar/' },
-    { title: 'PCOD / PCOS Care', href: '/pcod-pcos-care-in-keshav-nagar/' },
-    { title: 'Cervical Cancer Vaccine', href: '/cervical-cancer-vaccination-screening-in-keshav-nagar/' },
-    { title: 'Pre Conceptional Counselling', href: '/pre-conceptional-counselling-in-keshav-nagar/' },
-    { title: 'MTP, D & E Services', href: '/mtp-d-e-services-in-keshav-nagar/' },
-    { title: 'Tubal Ligation & Reversal', href: '/tubal-ligation-reversal-in-keshav-nagar/' },
-    { title: 'Laparoscopic Procedures', href: '/laparoscopic-procedures-in-keshav-nagar/' },
-    { title: 'Hysteroscopy', href: '/hysteroscopy-in-keshav-nagar/' },
-    { title: 'Pregnancy Care', href: '/pregnancy-care-in-keshav-nagar/' },
-    { title: 'High Risk Pregnancy Management', href: '/high-risk-pregnancy-management-in-keshav-nagar/' },
-    { title: 'Pubertal Counselling', href: '/pubertal-counselling-in-keshav-nagar/' },
-    { title: 'Menstrual Hygiene', href: '/menstrual-hygiene-in-keshav-nagar/' },
-    { title: 'Contraception Advice', href: '/contraception-advice-in-keshav-nagar/' },
-    { title: 'Lactational Counselling', href: '/lactational-counselling-in-keshav-nagar/' },
-    { title: 'Family Planning Center', href: '/family-planning-center-in-keshav-nagar/' },
-    { title: 'Pelvic Infections', href: '/pelvic-infections-treatment-in-keshav-nagar/' },
-    { title: 'Cancer Screening', href: '/cancer-screening-in-keshav-nagar/' },
-    { title: 'Addressing Menstrual Cycle Problems', href: '/menstrual-cycle-problems-in-keshav-nagar/' },
+    { title: 'Normal Delivery Care', href: '/normal-delivery-in-kalyani-nagar/' },
+    { title: 'LSCS (Caesarean Section)', href: '/lscs-caesarean-section-in-kalyani-nagar/' },
+    { title: 'Infertility, IUI & IVF', href: '/infertility-iui-ivf-in-kalyani-nagar/' },
+    { title: 'Scarless Hysterectomy (NDVH)', href: '/scarless-hysterectomy-in-kalyani-nagar/' },
+    { title: 'PCOD / PCOS Care', href: '/pcod-pcos-care-in-kalyani-nagar/' },
+    { title: 'Cervical Cancer Vaccine', href: '/cervical-cancer-vaccination-screening-in-kalyani-nagar/' },
+    { title: 'Pre Conceptional Counselling', href: '/pre-conceptional-counselling-in-kalyani-nagar/' },
+    { title: 'MTP, D & E Services', href: '/mtp-d-e-services-in-kalyani-nagar/' },
+    { title: 'Tubal Ligation & Reversal', href: '/tubal-ligation-reversal-in-kalyani-nagar/' },
+    { title: 'Laparoscopic Procedures', href: '/laparoscopic-procedures-in-kalyani-nagar/' },
+    { title: 'Hysteroscopy', href: '/hysteroscopy-in-kalyani-nagar/' },
+    { title: 'Pregnancy Care', href: '/pregnancy-care-in-kalyani-nagar/' },
+    { title: 'High Risk Pregnancy Management', href: '/high-risk-pregnancy-management-in-kalyani-nagar/' },
+    { title: 'Pubertal Counselling', href: '/pubertal-counselling-in-kalyani-nagar/' },
+    { title: 'Menstrual Hygiene', href: '/menstrual-hygiene-in-kalyani-nagar/' },
+    { title: 'Contraception Advice', href: '/contraception-advice-in-kalyani-nagar/' },
+    { title: 'Lactational Counselling', href: '/lactational-counselling-in-kalyani-nagar/' },
+    { title: 'Family Planning Center', href: '/family-planning-center-in-kalyani-nagar/' },
+    { title: 'Pelvic Infections', href: '/pelvic-infections-treatment-in-kalyani-nagar/' },
+    { title: 'Cancer Screening', href: '/cancer-screening-in-kalyani-nagar/' },
+    { title: 'Menstrual Cycle Problems', href: '/menstrual-cycle-problems-in-kalyani-nagar/' },
   ];
 
   const services = limitServices ? allServices.slice(0, limitServices) : allServices;
@@ -93,7 +93,7 @@ export default function ServiceSidebar({ currentPath, hideContact, hideServices,
 
       {/* Contact Widget */}
       {!hideContact && (
-        <div className="overflow-hidden bg-[#242736] rounded-[24px] border border-white/5 shadow-sm text-white">
+        <div className="overflow-hidden gradient-dark-section rounded-[24px] border border-white/10 shadow-sm text-white">
           {/* Theme Color Banner Header */}
           <div className="bg-accent px-8 py-5 text-center">
             <h3 className="text-[20px] font-bold text-white tracking-wide">

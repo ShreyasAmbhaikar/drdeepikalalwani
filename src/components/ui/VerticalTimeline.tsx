@@ -26,7 +26,7 @@ const stageColors = [
 export default function VerticalTimeline({ 
   items, 
   title,
-  introText = "Every treatment and procedure at our clinic is performed with the highest standards of safety, compassion, and expertise. Dr. Poonam ensures each step of your journey is carefully monitored and optimized for the best possible outcomes.",
+  introText = "Every treatment and procedure at our clinic is performed with the highest standards of safety, compassion, and clinical expertise. Dr. Deepika Lalwani ensures each step of your journey is carefully monitored and optimized for the best possible outcomes.",
   guidanceTitle = "Expert Guidance",
   guidanceText = "From your initial consultation through recovery, our dedicated team is here to support you with personalized care, ensuring your comfort and peace of mind at every stage."
 }: VerticalTimelineProps) {

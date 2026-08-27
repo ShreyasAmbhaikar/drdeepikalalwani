@@ -1,80 +1,163 @@
 export const siteConfig = {
-  name: "Dr. Poonam's Women's Clinic",
-  shortName: "Dr. Poonam's Clinic",
-  description: "Dr. Poonam's Women's Clinic is a leading gynecologist clinic in Keshav Nagar, Pune. Led by Dr. Poonam (MBBS, DGO, PGDMCH), senior obstetrician-gynecologist, offering expert care in normal delivery, infertility, IUI, PCOD, and laparoscopic procedures.",
-  url: "https://yourdomain.com", // update to client domain when active
-  logo: "/images/logo-women-health.svg",
-  footerLogo: "/images/footer-logo.svg",
+  name: "Dr. Deepika Lalwani(Nagwani)",
+  clinicName: "Dr. Deepika Lalwani's Clinic",
+  shortName: "Dr. Deepika Lalwani",
+  tagline: "A place where healing starts",
+  description: "Dr. Deepika Lalwani(Nagwani) is a trusted Consultant Obstetrician & Gynecologist (MBBS, DGO Mumbai) in Kalyani Nagar & Wadgaon Sheri, Pune. Providing expert care in normal delivery, high-risk pregnancy, PCOD/PCOS treatment, infertility & IUI, laparoscopic surgery, and comprehensive women's healthcare.",
+  url: "https://drdeepikalalwani.com", // update to production domain
+  logo: "/images/logo.png",
+  logoIcon: "/images/logo-icon.png",
+  footerLogo: "/images/logo.png",
   
   doctor: {
-    name: "Dr. Poonam",
-    qualifications: "MBBS, DGO, PGDMCH",
-    role: "Senior Consultant Obstetrician & Gynecologist",
-    experience: "+15 Years"
+    name: "Dr. Deepika Lalwani(Nagwani)",
+    shortName: "Dr. Deepika Lalwani",
+    qualifications: "MBBS, DGO (Mumbai)",
+    role: "Consultant Obstetrician & Gynecologist (OBS & Gynae)",
+    experience: "10+ Years",
+    bio: "Dr. Deepika Lalwani(Nagwani) is a highly skilled Obstetrician and Gynecologist trained in Mumbai with extensive clinical expertise. Known for her compassionate, patient-first approach, she specializes in normal vaginal deliveries, high-risk pregnancy care, advanced laparoscopic surgeries, PCOD/PCOS hormonal management, and personalized fertility care.",
+    quote: "Every woman deserves unhurried, empathetic medical care that empowers her with knowledge and confidence at every stage of her life."
   },
 
   // NAP (Name, Address, Phone) details
   contact: {
-    phone: "097119 29529",
-    phoneRaw: "+919711929529",
-    address: "Shop No 33, Shopping Complex, Mantra Mesmer Rd, in front of Florida River Bank, Keshav Nagar, Mundhwa, Mundhawa, Pune, Maharashtra 411036",
+    phone: "+91 9359264895",
+    phoneRaw: "+919359264895",
+    phoneFormatted: "093592 64895",
+    whatsappUrl: "https://wa.me/919359264895?text=Hello%20Dr.%20Deepika%20Lalwani,%20I%20would%20like%20to%20book%20a%20consultation.",
+    address: "Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri, Pune, Maharashtra 411014",
+    addressShort: "Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Wadgaon Sheri, Pune 411014",
+    landmark: "The collection by Brahma Corp, W10 Tower, 2nd Floor, Shop no. 219",
     hours: {
-      weekday: "Monday to Saturday (10am - 2pm, 6pm - 9pm)",
-      sunday: "Sunday (Closed)"
+      weekday: "Mon - Sat: 10:00 AM – 1:30 PM & 6:00 PM – 8:30 PM",
+      sunday: "Sunday: 10:00 AM – 1:30 PM"
     },
-    hoursShort: "Mo,Tu,We,Th,Fr,Sa 10:00-14:00 18:00-21:00",
-    mapsLink: "https://www.google.com/maps/place/Dr+Poonam's+Women's+Clinic+%7C+Gynecologist/data=!4m2!3m1!1s0x0:0xd39aed6b8c64a153?sa=X&ved=1t:2428&hl=en&ictx=111",
-    embedMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.1873138883656!2d73.9392261!3d18.520412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1d9161a0bc5%3A0xd39aed6b8c64a153!2sDr%20Poonam&#39;s%20Women&#39;s%20Clinic%20%7C%20Gynecologist!5e0!3m2!1sen!2sin!4v1716912345678"
+    hoursStructured: [
+      { days: "Monday to Saturday", morning: "10:00 AM - 1:30 PM", evening: "6:00 PM - 8:30 PM" },
+      { days: "Sunday", morning: "10:00 AM - 1:30 PM", evening: "Closed" }
+    ],
+    hoursShort: "Mo,Tu,We,Th,Fr,Sa 10:00-13:30 18:00-20:30, Su 10:00-13:30",
+    mapsLink: "https://www.google.com/maps/place/Dr+Deepika+Lalwani(Nagwani)/@18.5491654,73.9160916,15z/data=!4m6!3m5!1s0x3bc2c377cbbb5dc1:0xa0b44fba70f64f8c!8m2!3d18.5491654!4d73.9160916!16s%2Fg%2F11tg6bj2pl",
+    embedMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.420857321289!2d73.9135167!3d18.5491654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c377cbbb5dc1%3A0xa0b44fba70f64f8c!2sDr%20Deepika%20Lalwani(Nagwani)!5e0!3m2!1sen!2sin!4v1716912345678"
   },
 
   // Social handles
   socials: {
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
-    dribbble: "#"
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com",
+    whatsapp: "https://wa.me/919359264895?text=Hello%20Dr.%20Deepika%20Lalwani,%20I%20would%20like%20to%20book%20a%20consultation.",
+    linkedin: "#"
   },
 
   // Google reviews
   reviews: {
-    rating: "5.0",
-    count: "42"
+    rating: "4.9",
+    count: "105+",
+    totalReviews: 105
   },
 
   // Service Areas
   serviceAreas: {
-    primary: "Keshav Nagar",
-    secondary: ["Mundhwa", "Hadapsar", "Magarpatta", "Kharadi", "Pune"]
+    primary: "Kalyani Nagar & Wadgaon Sheri",
+    secondary: [
+      "New Kalyani Nagar",
+      "Wadgaon Sheri",
+      "Kalyani Nagar",
+      "Chandan Nagar",
+      "Koregaon Park",
+      "Viman Nagar",
+      "Anand Park",
+      "Sainath Nagar",
+      "Somnath Nagar",
+      "Digambar Nagar",
+      "Adarsh Nagar",
+      "Bramha Sun City",
+      "Bramha Corp",
+      "Ramwadi",
+      "Yerawada",
+      "Pune"
+    ]
   },
 
-  // Core services list from client image flyer
+  // Core services list
   services: [
-    { title: "Normal Delivery", desc: "Expert prenatal care, labor support, and natural child birth facilitation." },
-    { title: "LSCS (Caesarean Section)", desc: "Safe, sterile, and professional surgical delivery when medically indicated." },
-    { title: "Infertility, IUI, IVF", desc: "Advanced fertility testing, Intrauterine Insemination, and In Vitro Fertilization support." },
-    { title: "Scarless Hysterectomy (NDVH)", desc: "Non-descent vaginal hysterectomy for uterine conditions without abdominal incisions." },
-    { title: "PCOD Care", desc: "Holistic management of PCOS/PCOD with lifestyle advice, medical therapy, and symptom control." },
-    { title: "Cervical Cancer Vaccination and Screening", desc: "Preventative HPV vaccine administration and regular Pap smear testing." },
-    { title: "Pre Conceptional Counselling", desc: "Health check-ups, lifestyle advice, and preparation plans for couples planning pregnancy." },
-    { title: "MTP, D & E", desc: "Safe, legal, and confidential medical termination of pregnancy and dilation & evacuation services." },
-    { title: "Tubal Ligation & Reversal", desc: "Permanent female contraception and microsurgical tubal re-canalization." },
-    { title: "Laparoscopic Procedure", desc: "Minimally invasive keyhole surgeries for ovarian cysts, fibroids, and diagnostic laparoscopy." }
+    { 
+      title: "Normal Delivery Care", 
+      slug: "normal-delivery-in-kalyani-nagar",
+      desc: "Compassionate antenatal monitoring, natural labor support, and expert guidance for safe vaginal childbirth." 
+    },
+    { 
+      title: "PCOD & PCOS Care", 
+      slug: "pcod-pcos-care-in-kalyani-nagar",
+      desc: "Holistic, evidence-based management of PCOS with personalized nutrition, hormonal balance, and skin/weight care." 
+    },
+    { 
+      title: "High-Risk Pregnancy Care", 
+      slug: "high-risk-pregnancy-management-in-kalyani-nagar",
+      desc: "Specialized care for gestational diabetes, hypertension, advanced maternal age, and multiple pregnancies." 
+    },
+    { 
+      title: "Infertility & IUI Care", 
+      slug: "infertility-iui-ivf-in-kalyani-nagar",
+      desc: "Comprehensive fertility evaluations, ovulation tracking, Intrauterine Insemination (IUI), and IVF guidance." 
+    },
+    { 
+      title: "Laparoscopic Procedures", 
+      slug: "laparoscopic-procedures-in-kalyani-nagar",
+      desc: "Minimally invasive keyhole surgeries for ovarian cysts, uterine fibroids, endometriosis, and tubal evaluation." 
+    },
+    { 
+      title: "LSCS (Caesarean Section)", 
+      slug: "lscs-caesarean-section-in-kalyani-nagar",
+      desc: "Safe, precision surgical deliveries performed with highest clinical safety standards when medically indicated." 
+    },
+    { 
+      title: "Cervical Cancer Screening & HPV Vaccine", 
+      slug: "cervical-cancer-vaccination-screening-in-kalyani-nagar",
+      desc: "Preventative HPV vaccination and painless Pap smear screenings for early detection and lifelong cervical health." 
+    },
+    { 
+      title: "Scarless Hysterectomy (NDVH)", 
+      slug: "scarless-hysterectomy-in-kalyani-nagar",
+      desc: "Non-descent vaginal hysterectomy for uterine conditions without any external abdominal cuts or visible scars." 
+    },
+    { 
+      title: "Pre-Conceptional Counselling", 
+      slug: "pre-conceptional-counselling-in-kalyani-nagar",
+      desc: "Personalized medical checkups, genetic screenings, and lifestyle advice for couples planning a healthy pregnancy." 
+    },
+    { 
+      title: "Hysteroscopy Procedures", 
+      slug: "hysteroscopy-in-kalyani-nagar",
+      desc: "Direct endoscopic diagnosis and treatment for uterine polyps, abnormal bleeding, and endometrial septum." 
+    },
+    { 
+      title: "Menstrual Cycle Disorder Management", 
+      slug: "menstrual-cycle-problems-in-kalyani-nagar",
+      desc: "Expert treatment for heavy bleeding (menorrhagia), severe menstrual cramps, painful periods, and cycle irregularities." 
+    },
+    { 
+      title: "Family Planning & Contraception", 
+      slug: "contraception-advice-in-kalyani-nagar",
+      desc: "Confidential, tailored advice on oral pills, hormonal implants, copper-T/Mirena IUD insertion, and permanent sterilization." 
+    }
   ],
 
   // Target SEO Keywords
   keywords: [
-    "gynecologist in keshav nagar",
-    "gynecologist keshav nagar",
-    "gynecologist in mundhwa",
-    "obstetrician gynecologist in pune",
-    "fertility clinic keshav nagar",
-    "women's health center mundhwa",
-    "pregnancy care clinic keshav nagar",
-    "best gynecologist hadapsar",
-    "obstetrician in kharadi",
-    "PCOD treatment keshav nagar",
-    "IUI specialist pune",
-    "normal delivery doctor keshav nagar"
+    "gynecologist in kalyani nagar",
+    "gynecologist in wadgaon sheri",
+    "best gynecologist in new kalyani nagar",
+    "lady gynecologist near me pune",
+    "obstetrician in koregaon park",
+    "pregnancy care clinic kalyani nagar",
+    "pcod pcos doctor in wadgaon sheri",
+    "normal delivery specialist in pune",
+    "high risk pregnancy doctor kalyani nagar",
+    "infertility clinic in wadgaon sheri",
+    "laparoscopic gynecologist pune",
+    "women clinic brahma corp kalyani nagar",
+    "gynecologist near chandan nagar pune"
   ]
 };
 

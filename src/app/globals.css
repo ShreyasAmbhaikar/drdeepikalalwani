@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #242736;
-  --color-secondary: #F8E6D8;
-  --color-accent: #5A4A66;
-  --color-accent-secondary: #D8E4EA;
-  --color-text: #4F4D4D;
-  --color-background: #FBF6F2;
-  --color-divider: #2D322C1a;
+  --color-primary: #4A1D6D;
+  --color-primary-dark: #381552;
+  --color-secondary: #F6EFFC;
+  --color-accent: #7C25B8;
+  --color-accent-secondary: #EEDDFB;
+  --color-text: #4E4654;
+  --color-background: #FAF8FC;
+  --color-divider: #4A1D6D1a;
   --color-dark-divider: #FFFFFF1a;
 
   --font-onest: "Onest", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
 
-  --radius-btn: 10px;
-  --radius-card: 20px;
-  --radius-section: 30px;
+  --radius-btn: 12px;
+  --radius-card: 22px;
+  --radius-section: 32px;
 
   --container-max-width: 1300px;
 
@@ -27,7 +29,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-12px);
+      transform: translateY(-10px);
     }
   }
   
@@ -94,12 +96,27 @@
     inset: 0;
     z-index: -1;
     border-radius: inherit;
-    background: linear-gradient(102deg, 
-      #D8E4EA -2.83%, 
-      rgba(216,228,234,0.5) 30.19%, 
-      rgba(216,228,234,0.2) 53.89%, 
-      rgba(248,230,216,0.5) 100.11%
+    background: linear-gradient(105deg, 
+      #F6EEFC 0%, 
+      #FAF7FD 45%, 
+      #F2E5FA 100%
     );
+  }
+
+  .gradient-purple-cta {
+    background: linear-gradient(135deg, #5B2082 0%, #7C25B8 50%, #9030CE 100%);
+  }
+
+  .gradient-purple-cta:hover {
+    background: linear-gradient(135deg, #6B2799 0%, #8A2DC9 50%, #9E3DE0 100%);
+  }
+
+  .gradient-dark-section {
+    background: linear-gradient(145deg, #3B1656 0%, #4D1E6F 50%, #301147 100%);
+  }
+
+  .gradient-card-dark {
+    background: linear-gradient(135deg, rgba(77, 30, 111, 0.5) 0%, rgba(48, 17, 71, 0.7) 100%);
   }
 }
 

@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import PageHeader from "@/components/landing/PageHeader";
 import { Maximize2, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
+import Link from "next/link";
 
 interface GalleryImage {
   id: number;
@@ -17,73 +19,73 @@ export default function GalleryPage() {
   const [isZoomed, setIsZoomed] = useState(false);
 
   const breadcrumbs = [
-    { label: "Home", href: "/best-gynecologist-in-keshav-nagar/" },
+    { label: "Home", href: "/" },
     { label: "Gallery" },
   ];
 
   const galleryImages: GalleryImage[] = [
     {
-      id: 9,
-      src: "/images/clinic-charts.webp",
-      alt: "Pregnancy Food Guide and Pelvic Floor Exercises wall charts at Dr. Poonam's Women's Clinic",
+      id: 1,
+      src: "/images/gallery-dummy-1.svg",
+      alt: "Pregnancy Care & Exercises Chart at Dr. Deepika Lalwani's Clinic",
       categoryLabel: "Patient Education",
       title: "Pregnancy Care & Exercises Chart",
     },
     {
-      id: 10,
-      src: "/images/doctor-desk-portrait.webp",
-      alt: "Dr. Poonam in her consultation room at Dr. Poonam's Women's Clinic",
-      categoryLabel: "Consulting Suite",
-      title: "Dr. Poonam's Consulting Office",
-    },
-    {
-      id: 11,
-      src: "/images/doctor-consultation-portrait-v2.webp",
-      alt: "Dr. Poonam consultation desk and patient care at Dr. Poonam's Women's Clinic",
-      categoryLabel: "Consulting Suite",
-      title: "Dr. Poonam's Consultation Desk",
-    },
-    {
-      id: 1,
-      src: "/images/clinic-exterior.webp",
-      alt: "Dr. Poonam's Women's Clinic Storefront and Entrance in Keshav Nagar",
-      categoryLabel: "Clinic Exterior",
-      title: "Clinic Storefront & Signage",
-    },
-    {
       id: 2,
-      src: "/images/doctor-consultation-desk.webp",
-      alt: "Dr. Poonam at her consultation desk inside the consulting suite",
+      src: "/images/gallery-dummy-2.svg",
+      alt: "Consulting Room & Diagnostic Suite at Dr. Deepika Lalwani's Clinic",
       categoryLabel: "Consulting Suite",
-      title: "Dr. Poonam's Consultation Room",
+      title: "Consulting Room & Diagnostic Suite",
     },
     {
       id: 3,
-      src: "/images/clinic-waiting-hall.webp",
-      alt: "Patient waiting area and corridor inside Dr. Poonam's Women's Clinic",
-      categoryLabel: "Waiting Lounge",
-      title: "Clinic Waiting Corridor",
-    },
-    {
-      id: 12,
-      src: "/images/doctor-staff-portrait.webp",
-      alt: "Dr. Poonam with clinic Patient in the consultation room at Dr. Poonam's Women's Clinic",
+      src: "/images/gallery-dummy-3.svg",
+      alt: "Doctor Consultation Desk at Dr. Deepika Lalwani's Clinic",
       categoryLabel: "Consulting Suite",
-      title: "Dr. Poonam with Patient",
+      title: "Doctor Consultation Desk",
     },
     {
-      id: 13,
-      src: "/images/gallery-newborn-delivery.webp",
-      alt: "Dr. Poonam celebrating a successful newborn delivery with parents in the recovery room",
-      categoryLabel: "Patient Care",
-      title: "Newborn Delivery Celebration",
+      id: 4,
+      src: "/images/gallery-dummy-4.svg",
+      alt: "Clinic Facility & Entrance at The Collection by Brahma Corp",
+      categoryLabel: "Clinic Exterior",
+      title: "Clinic Facility & Entrance",
     },
     {
-      id: 14,
-      src: "/images/gallery-operation-theater.webp",
-      alt: "Dr. Poonam with parents in the sterile operation theater/surgical room",
+      id: 5,
+      src: "/images/gallery-dummy-5.svg",
+      alt: "Consultation Suite & Patient Examination Area",
+      categoryLabel: "Consulting Suite",
+      title: "Consultation Suite & Patient Examination Area",
+    },
+    {
+      id: 6,
+      src: "/images/gallery-dummy-6.svg",
+      alt: "Comfortable Patient Waiting Lounge",
+      categoryLabel: "Waiting Lounge",
+      title: "Comfortable Patient Waiting Lounge",
+    },
+    {
+      id: 7,
+      src: "/images/gallery-dummy-7.svg",
+      alt: "Compassionate Doctor-Patient Interaction",
+      categoryLabel: "Consulting Suite",
+      title: "Compassionate Doctor-Patient Interaction",
+    },
+    {
+      id: 8,
+      src: "/images/gallery-dummy-8.svg",
+      alt: "Newborn Delivery & Maternity Care",
       categoryLabel: "Patient Care",
-      title: "Surgical Delivery Preparation",
+      title: "Newborn Delivery & Maternity Care",
+    },
+    {
+      id: 9,
+      src: "/images/gallery-dummy-9.svg",
+      alt: "Sterile Surgical & Obstetric Suite",
+      categoryLabel: "Patient Care",
+      title: "Sterile Surgical & Obstetric Suite",
     },
   ];
 
@@ -125,15 +127,15 @@ export default function GalleryPage() {
         <section className="py-[80px] lg:py-[120px] bg-background">
           <div className="container mx-auto px-4 max-w-[1320px]">
             {/* Header intro */}
-            <div className="text-center max-w-[750px] mx-auto mb-[50px] flex flex-col gap-4">
+            <div className="text-center max-w-[750px] mx-auto mb-[50px] flex flex-col gap-3">
               <span className="text-accent text-[14px] font-bold tracking-widest uppercase">
-                Take a Tour
+                Virtual Clinic Tour
               </span>
-              <h2 className="text-[32px] md:text-[42px] font-bold text-primary leading-tight">
-                Step Inside Dr. Poonam's Women's Clinic
+              <h2 className="text-[30px] md:text-[42px] font-extrabold text-primary leading-tight font-onest">
+                Step Inside Dr. Deepika Lalwani&apos;s Clinic
               </h2>
-              <p className="text-text text-[16px] leading-relaxed">
-                Explore our state-of-the-art facilities in Keshav Nagar, Pune. We maintain a warm, welcoming, and sterile clinical environment equipped with premium diagnostic and patient care systems to make your visit safe and stress-free.
+              <p className="text-text text-[15px] md:text-[16px] leading-relaxed">
+                Explore our modern facilities at {siteConfig.contact.address}. We provide a hygienic, tranquil, and comfortable medical environment equipped with advanced diagnostic tools to ensure your visit is reassuring and seamless.
               </p>
             </div>
 
@@ -143,7 +145,7 @@ export default function GalleryPage() {
                 <div
                   key={image.id}
                   onClick={() => openLightbox(idx)}
-                  className="break-inside-avoid mb-6 group relative overflow-hidden rounded-[24px] border border-divider/10 shadow-sm cursor-zoom-in transition-all duration-500 hover:shadow-lg"
+                  className="break-inside-avoid mb-6 group relative overflow-hidden rounded-[24px] border border-purple-100/80 shadow-sm cursor-zoom-in transition-all duration-300 hover:shadow-lg"
                 >
                   {/* Image Element */}
                   <img
@@ -159,13 +161,13 @@ export default function GalleryPage() {
                   {/* Absolute UI overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 flex items-end justify-between">
                     <div>
-                      <h3 className="text-white font-bold text-[18px] leading-tight">
+                      <h3 className="text-white font-bold text-[17px] leading-tight font-onest">
                         {image.title}
                       </h3>
                     </div>
                     
                     {/* Maximize Icon */}
-                    <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-white/15 backdrop-blur-md border border-white/20 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 shrink-0">
                       <Maximize2 className="w-4 h-4" />
                     </div>
                   </div>
@@ -174,21 +176,21 @@ export default function GalleryPage() {
             </div>
 
             {/* Quick Consultation Ribbon */}
-            <div className="mt-[60px] bg-secondary border border-divider/10 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="mt-[50px] bg-secondary/90 border border-purple-200/70 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm">
               <div>
-                <h4 className="font-bold text-[20px] text-primary mb-1">
-                  Want to consult Dr. Poonam in person?
+                <h4 className="font-bold text-[20px] text-primary mb-1 font-onest">
+                  Want to consult Dr. Deepika Lalwani in person?
                 </h4>
                 <p className="text-text text-[15px]">
-                  Book an appointment online or call us directly to schedule a clinic visit today.
+                  Book an appointment online or call us directly at {siteConfig.contact.phone} to schedule a clinic visit today.
                 </p>
               </div>
-              <a
+              <Link
                 href="/contact-us"
-                className="bg-accent text-white font-bold text-[15px] px-6 py-3 rounded-[12px] hover:bg-primary transition-all duration-300 shrink-0 shadow-sm"
+                className="gradient-purple-cta text-white font-bold text-[15px] px-6 py-3.5 rounded-[12px] hover:opacity-95 transition-all duration-300 shrink-0 shadow-md"
               >
                 Schedule Clinic Visit
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -202,7 +204,7 @@ export default function GalleryPage() {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50"
+              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50 cursor-pointer"
               aria-label="Close Lightbox"
             >
               <X className="w-6 h-6" />
@@ -211,7 +213,7 @@ export default function GalleryPage() {
             {/* Left Nav Arrow */}
             <button
               onClick={handlePrev}
-              className="absolute left-4 md:left-8 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50"
+              className="absolute left-4 md:left-8 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50 cursor-pointer"
               aria-label="Previous Image"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -236,7 +238,7 @@ export default function GalleryPage() {
               </div>
               {/* Description strip at the bottom */}
               <div className="mt-4 text-center text-white/90 px-4 max-w-[700px] pointer-events-none">
-                <p className="text-[15px] md:text-[18px] font-bold leading-snug">
+                <p className="text-[15px] md:text-[18px] font-bold leading-snug font-onest">
                   {galleryImages[activeImageIndex].title}
                 </p>
               </div>
@@ -245,7 +247,7 @@ export default function GalleryPage() {
             {/* Right Nav Arrow */}
             <button
               onClick={handleNext}
-              className="absolute right-4 md:right-8 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50"
+              className="absolute right-4 md:right-8 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-200 z-50 cursor-pointer"
               aria-label="Next Image"
             >
               <ChevronRight className="w-6 h-6" />

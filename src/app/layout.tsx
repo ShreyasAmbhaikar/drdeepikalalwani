@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Onest } from "next/font/google";
+import { Onest, Outfit } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 import { FloatingWidgets } from "@/components/landing/FloatingWidgets";
+import { siteConfig } from "@/lib/site-config";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -12,36 +13,42 @@ const onest = Onest({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata: Metadata = {
-  title: "Dr. Poonam's Women's Clinic | Best Gynecologist in Keshav Nagar & Mundhwa",
-  description: "Dr. Poonam's Women's Clinic is Pune's leading gynecologist clinic in Keshav Nagar & Mundhwa. Expert pregnancy care, delivery, PCOD, and infertility treatments.",
-  keywords: [
-    "gynecologist in keshav nagar",
-    "gynecologist keshav nagar",
-    "gynecologist in mundhwa",
-    "best gynecologist in pune",
-    "obstetrician gynecologist in pune",
-    "pregnancy care clinic keshav nagar",
-    "PCOD treatment keshav nagar",
-    "IUI specialist pune",
-    "normal delivery doctor keshav nagar"
-  ],
-  authors: [{ name: "Dr. Poonam's Women's Clinic" }],
-  creator: "Dr. Poonam",
-  publisher: "Dr. Poonam",
+  title: "Dr. Deepika Lalwani(Nagwani) | Best Gynecologist in Kalyani Nagar & Wadgaon Sheri, Pune",
+  description: "Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) is a top lady gynecologist and obstetrician in Kalyani Nagar & Wadgaon Sheri, Pune. Compassionate care in normal delivery, high-risk pregnancy, PCOD/PCOS, infertility, & laparoscopic surgery.",
+  keywords: siteConfig.keywords,
+  authors: [{ name: "Dr. Deepika Lalwani(Nagwani)" }],
+  creator: "Dr. Deepika Lalwani",
+  publisher: "Dr. Deepika Lalwani(Nagwani)",
   robots: "index, follow, max-image-preview:large",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://yourdomain.com/",
-    siteName: "Dr. Poonam's Women's Clinic",
-    title: "Dr. Poonam's Women's Clinic | Best Gynecologist in Keshav Nagar & Mundhwa",
-    description: "Dr. Poonam's Women's Clinic is a top gynecologist clinic in Keshav Nagar & Mundhwa, Pune. Led by senior consultant Obstetrician-Gynecologist Dr. Poonam.",
+    locale: "en_IN",
+    url: siteConfig.url,
+    siteName: "Dr. Deepika Lalwani(Nagwani)",
+    title: "Dr. Deepika Lalwani(Nagwani) | Best Gynecologist in Kalyani Nagar & Wadgaon Sheri",
+    description: "Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) - Consultant Obstetrician & Gynecologist in New Kalyani Nagar, Wadgaon Sheri, Pune. Expert maternity, PCOD, infertility & gynae care.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Dr. Deepika Lalwani(Nagwani) Gynecologist Clinic",
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Poonam's Women's Clinic | Best Gynecologist in Keshav Nagar & Mundhwa",
-    description: "Dr. Poonam's Women's Clinic is a top gynecologist clinic in Keshav Nagar & Mundhwa, Pune. Led by senior consultant Obstetrician-Gynecologist Dr. Poonam.",
+    title: "Dr. Deepika Lalwani(Nagwani) | Best Gynecologist in Kalyani Nagar & Wadgaon Sheri",
+    description: "Consult Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) for pregnancy care, normal delivery, PCOD/PCOS, and laparoscopic procedures in Pune.",
+    images: ["/images/logo.png"],
   },
 };
 
@@ -52,39 +59,79 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Dr. Poonam's Women's Clinic",
-    "url": "https://yourdomain.com",
-    "logo": "https://yourdomain.com/images/logo-women-health.svg",
-    "image": "https://yourdomain.com/images/logo-women-health.svg",
-    "description": "Dr. Poonam's Women's Clinic is a leading gynecologist clinic in Keshav Nagar, Pune. Led by Dr. Poonam (MBBS, DGO, PGDMCH), senior consultant in pregnancy care, normal delivery, infertility, PCOD, and laparoscopic procedures.",
-    "telephone": "097119 29529",
+    "@type": ["Physician", "MedicalClinic"],
+    "name": "Dr. Deepika Lalwani(Nagwani)",
+    "alternateName": "Dr. Deepika Lalwani's Clinic",
+    "url": siteConfig.url,
+    "logo": `${siteConfig.url}/images/logo.png`,
+    "image": `${siteConfig.url}/images/logo.png`,
+    "description": siteConfig.description,
+    "telephone": siteConfig.contact.phoneRaw,
+    "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Shop No 33, Shopping Complex, Mantra Mesmer Rd, in front of Florida River Bank, Keshav Nagar, Mundhwa, Mundhawa",
+      "streetAddress": "Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri",
       "addressLocality": "Pune",
       "addressRegion": "Maharashtra",
-      "postalCode": "411036",
+      "postalCode": "411014",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "18.520412",
-      "longitude": "73.9392261"
+      "latitude": "18.5491654",
+      "longitude": "73.9160916"
     },
-    "openingHours": "Mo,Tu,We,Th,Fr,Sa 10:00-14:00, 18:00-21:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "13:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "18:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "13:30"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "42"
+      "ratingValue": "4.9",
+      "reviewCount": "105",
+      "bestRating": "5",
+      "worstRating": "1"
     },
-    "medicalSpecialty": "ObstetricianGynecologist"
+    "medicalSpecialty": [
+      "Obstetrics",
+      "Gynecology",
+      "Infertility",
+      "Laparoscopy"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Women's Health & Gynecological Services",
+      "itemListElement": siteConfig.services.map((s, idx) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": s.title,
+          "description": s.desc
+        }
+      }))
+    }
   };
 
   return (
-    <html lang="en" className={`${onest.variable} scroll-smooth antialiased overflow-x-hidden`}>
+    <html lang="en" className={`${onest.variable} ${outfit.variable} scroll-smooth antialiased overflow-x-hidden`}>
       <head>
-        <meta name="theme-color" content="#242736" />
+        <meta name="theme-color" content="#2D0A4E" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <script
           type="application/ld+json"
@@ -93,7 +140,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col overflow-x-hidden bg-background">
         <Header />
-        {children}
+        <main className="flex-1 w-full">{children}</main>
         <Footer />
         <FloatingWidgets />
       </body>

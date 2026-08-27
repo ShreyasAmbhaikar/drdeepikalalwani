@@ -90,7 +90,7 @@ export const BlogSection = () => {
                 <div className="mt-auto">
                   <Link 
                     href={post.href} 
-                    className="inline-flex items-center gap-[6px] text-[15px] font-bold text-[#242736] group-hover:text-accent transition-colors duration-300"
+                    className="inline-flex items-center gap-[6px] text-[15px] font-bold text-primary group-hover:text-accent transition-colors duration-300"
                   >
                     Read More
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">

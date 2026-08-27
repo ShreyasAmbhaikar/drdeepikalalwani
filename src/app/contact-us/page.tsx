@@ -1,10 +1,11 @@
 import React from "react";
 import PageHeader from "@/components/landing/PageHeader";
-import { Clock, MapPin, Phone, Mail } from "lucide-react";
+import { Clock, MapPin, Phone, MessageSquare } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata = {
-  title: "Contact Us | Dr. Poonam's Women's Clinic",
-  description: "Get in touch with Dr. Poonam's Women's Clinic in Keshav Nagar, Pune. Reach out for expert pregnancy care, delivery consultations, PCOD support, and fertility care.",
+  title: "Contact Dr. Deepika Lalwani(Nagwani) | Gynecologist in Kalyani Nagar Pune",
+  description: "Get in touch with Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) at Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri, Pune. Call +91 9359264895 for appointments.",
   alternates: {
     canonical: "/contact-us/",
   },
@@ -26,66 +27,65 @@ export default function ContactUsPage() {
           <div className="container mx-auto px-4 max-w-[1320px]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               
-              {/* Schedule Hours */}
-              <div className="bg-secondary p-8 rounded-[30px] border border-divider/10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full text-primary">
-                <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center text-accent mb-6 shrink-0">
+              {/* Card 1: Clinic Hours (Soft Lilac Secondary Card) */}
+              <div className="bg-secondary/90 p-8 rounded-[30px] border border-purple-200/70 hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full text-primary shadow-sm">
+                <div className="w-14 h-14 bg-accent/15 rounded-full flex items-center justify-center text-accent mb-6 shrink-0">
                   <Clock className="w-7 h-7" />
                 </div>
-                <h3 className="text-[24px] font-bold text-primary mb-2">Schedule Hours</h3>
-                <p className="text-text mb-6 text-[15px]">Clinic timing and consultation schedule.</p>
-                <ul className="space-y-3 text-text">
-                  <li className="flex justify-between border-b border-divider/20 pb-2">
-                    <span className="capitalize font-semibold text-primary">Monday - Saturday</span>
+                <h3 className="text-[22px] font-bold text-primary mb-6 font-onest">Clinic Hours</h3>
+                <ul className="space-y-3.5 text-text text-[14px] mt-auto">
+                  <li className="flex justify-between border-b border-purple-200/50 pb-2.5">
+                    <span className="font-semibold text-primary">Monday – Saturday</span>
                     <div className="flex flex-col items-end text-right font-medium">
-                      <span>10:00 - 14:00</span>
-                      <span>18:00 - 21:00</span>
+                      <span>10:00 AM – 1:30 PM</span>
+                      <span>6:00 PM – 8:30 PM</span>
                     </div>
                   </li>
-                  <li className="flex justify-between pb-1">
-                    <span className="capitalize font-semibold text-primary">Sunday</span>
-                    <span className="font-semibold text-accent">Closed</span>
+                  <li className="flex justify-between pt-1">
+                    <span className="font-semibold text-primary">Sunday</span>
+                    <span className="font-medium text-primary">10:00 AM – 1:30 PM</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Our Locations */}
-              <div className="bg-accent text-white p-8 rounded-[30px] border border-white/5 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+              {/* Card 2: Clinic Address (Vibrant Gradient CTA Card) */}
+              <div className="gradient-purple-cta text-white p-8 rounded-[30px] border border-white/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full shadow-md">
                 <div className="w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-white mb-6 shrink-0">
                   <MapPin className="w-7 h-7" />
                 </div>
-                <h3 className="text-[24px] font-bold text-white mb-2">Our Locations</h3>
-                <p className="text-white/80 mb-6 text-[15px]">Providing expert gynecologist care locally.</p>
+                <h3 className="text-[22px] font-bold text-white mb-4 font-onest">Clinic Address</h3>
                 <a 
-                  href="https://www.google.com/maps/place/Dr+Poonam's+Women's+Clinic+%7C+Gynecologist/data=!4m2!3m1!1s0x0:0xd39aed6b8c64a153?sa=X&ved=1t:2428&hl=en&ictx=111"
+                  href={siteConfig.contact.mapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-white/80 transition-colors duration-300 font-semibold leading-[1.6] block"
+                  className="text-white hover:text-purple-200 transition-colors duration-300 font-medium text-[14px] leading-[1.65] mt-auto block"
                 >
-                  Shop No 33, Shopping Complex, Mantra Mesmer Rd, in front of Florida River Bank, Keshav Nagar, Mundhwa, Mundhawa, Pune, Maharashtra 411036
+                  {siteConfig.contact.address}
                 </a>
               </div>
 
-              {/* Contact Us */}
-              <div className="bg-primary text-white p-8 rounded-[30px] border border-white/5 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
-                <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-white mb-6 shrink-0">
-                  <Phone className="w-7 h-7" />
+              {/* Card 3: Call & WhatsApp (Dark Primary Purple Card) */}
+              <div className="bg-primary text-white p-8 rounded-[30px] border border-white/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full shadow-md">
+                <div className="w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-accent mb-6 shrink-0">
+                  <Phone className="w-7 h-7 text-purple-300" />
                 </div>
-                <h3 className="text-[24px] font-bold text-white mb-2">Contact Us</h3>
-                <p className="text-white/80 mb-6 text-[15px]">Reach out for pregnancy and gynae support.</p>
-                <div className="space-y-3">
+                <h3 className="text-[22px] font-bold text-white mb-6 font-onest">Call &amp; WhatsApp</h3>
+                <div className="space-y-4 mt-auto">
                   <a 
-                    href="tel:09711929529" 
-                    className="flex items-center gap-3 text-white font-bold hover:text-white/80 transition-colors duration-300"
+                    href={`tel:${siteConfig.contact.phoneRaw}`} 
+                    className="flex items-center gap-3 text-white font-bold hover:text-purple-300 transition-colors duration-300 text-[16px]"
                   >
-                    <Phone className="w-4 h-4 text-white" />
-                    <span>097119 29529</span>
+                    <Phone className="w-4 h-4 text-purple-300 shrink-0" />
+                    <span>{siteConfig.contact.phone}</span>
                   </a>
                   <a 
-                    href="tel:08149661830" 
-                    className="flex items-center gap-3 text-white font-bold hover:text-white/80 transition-colors duration-300"
+                    href={siteConfig.contact.whatsappUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-white font-bold hover:text-[#25D366] transition-colors duration-300 text-[15px]"
                   >
-                    <Phone className="w-4 h-4 text-white" />
-                    <span>081496 61830</span>
+                    <MessageSquare className="w-4 h-4 text-[#25D366] shrink-0" />
+                    <span>Chat on WhatsApp</span>
                   </a>
                 </div>
               </div>
@@ -94,14 +94,14 @@ export default function ContactUsPage() {
           </div>
         </section>
 
-        {/* Map Section (Full Width aligned) */}
+        {/* Map Section */}
         <section className="pb-[80px] lg:pb-[120px] bg-background">
           <div className="container mx-auto px-4 max-w-[1320px]">
-            <div className="w-full h-[450px] lg:h-[550px] rounded-[30px] overflow-hidden border border-divider/10 shadow-lg relative">
+            <div className="w-full h-[450px] lg:h-[550px] rounded-[30px] overflow-hidden border border-purple-200/60 shadow-xl relative">
               <iframe 
-                src="https://maps.google.com/maps?q=Dr%20Poonam's%20Women's%20Clinic%20Keshav%20Nagar%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                title="Dr Poonam's Women's Clinic, Keshav Nagar, Pune" 
-                aria-label="Dr Poonam's Women's Clinic, Keshav Nagar, Pune"
+                src="https://maps.google.com/maps?q=Dr%20Deepika%20Lalwani(Nagwani)%20Brahma%20Corp%20Wadgaon%20Sheri%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                title="Dr Deepika Lalwani(Nagwani) Clinic Location, New Kalyani Nagar, Pune" 
+                aria-label="Dr Deepika Lalwani(Nagwani) Clinic Location, New Kalyani Nagar, Pune"
                 className="w-full h-full border-0 absolute inset-0"
                 allowFullScreen
                 loading="lazy"

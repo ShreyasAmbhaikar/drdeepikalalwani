@@ -31,17 +31,17 @@ export default function Accordion({ items }: AccordionProps) {
             }`}
           >
             <button
-              className={`w-full flex items-center justify-between p-[20px_30px] text-left transition-colors duration-300 cursor-pointer ${
+              className={`w-full flex items-center justify-between p-[16px_22px] md:p-[18px_26px] text-left transition-colors duration-300 cursor-pointer ${
                 isActive ? 'bg-accent/5 text-accent font-bold' : 'bg-white text-primary hover:text-accent font-semibold'
               }`}
               onClick={() => toggleAccordion(index)}
             >
-              <span className="text-[17px] md:text-[19px]">{item.question}</span>
-              <span className={`flex-shrink-0 ml-4 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${isActive ? 'bg-accent text-white rotate-0' : 'bg-[#F5F0EB] text-primary/60 rotate-0'}`}>
+              <span className="text-[15px] md:text-[16.5px] leading-snug">{item.question}</span>
+              <span className={`flex-shrink-0 ml-4 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${isActive ? 'bg-accent text-white rotate-0' : 'bg-[#F5F0EB] text-primary/60 rotate-0'}`}>
                 {isActive ? (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="12" x2="6" y2="12"></line></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="12" x2="6" y2="12"></line></svg>
                 ) : (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                 )}
               </span>
             </button>
@@ -50,7 +50,7 @@ export default function Accordion({ items }: AccordionProps) {
                 isActive ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="p-[25px_30px] text-text border-t border-divider/5 bg-white text-[15px] leading-relaxed">
+              <div className="p-[18px_22px] md:p-[20px_26px] text-text border-t border-divider/5 bg-white text-[14px] md:text-[15px] leading-relaxed">
                 <p>{item.answer}</p>
               </div>
             </div>

@@ -21,13 +21,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const baseUrl = "https://yourdomain.com";
 
   return {
-    title: `${post.title} | Dr Poonam's Women's Clinic`,
+    title: `${post.title} | Dr. Deepika Lalwani's Clinic`,
     description: post.excerpt,
     alternates: {
       canonical: `/blog/${post.slug}/`,
     },
     openGraph: {
-      title: `${post.title} | Dr Poonam's Women's Clinic`,
+      title: `${post.title} | Dr. Deepika Lalwani's Clinic`,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Dr Poonam's Women's Clinic`,
+      title: `${post.title} | Dr. Deepika Lalwani's Clinic`,
       description: post.excerpt,
       images: [`${baseUrl}${post.image}`],
     },

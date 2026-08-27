@@ -1,100 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Hub Pages -->
   <url>
-    <loc>https://yourdomain.com/best-gynecologist-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/about-us/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/best-gynecologist-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/about-us/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/services/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/gallery/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/services/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/contact-us/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/gallery/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/contact-us/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/blog/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/blog/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Services pages -->
+
+  <!-- 20 Specialized Gynecological & Obstetric Services -->
   <url>
-    <loc>https://yourdomain.com/normal-delivery-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/normal-delivery-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/lscs-caesarean-section-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/lscs-caesarean-section-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/infertility-iui-ivf-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/infertility-iui-ivf-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/scarless-hysterectomy-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/scarless-hysterectomy-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/pcod-pcos-care-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/pcod-pcos-care-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/cervical-cancer-vaccination-screening-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/cervical-cancer-vaccination-screening-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/pre-conceptional-counselling-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/pre-conceptional-counselling-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/mtp-d-e-services-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/mtp-d-e-services-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/tubal-ligation-reversal-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/tubal-ligation-reversal-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/laparoscopic-procedures-in-keshav-nagar/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <loc>https://drdeepikalalwani.com/laparoscopic-procedures-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/hysteroscopy-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/pregnancy-care-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/high-risk-pregnancy-management-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/pubertal-counselling-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/menstrual-hygiene-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/contraception-advice-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/lactational-counselling-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/family-planning-center-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/pelvic-infections-treatment-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/cancer-screening-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/menstrual-cycle-problems-in-kalyani-nagar/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Educational Blog Articles -->
+  <url>
+    <loc>https://drdeepikalalwani.com/blog/understanding-pcos/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/blog/first-trimester-guide/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drdeepikalalwani.com/blog/importance-of-screenings/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

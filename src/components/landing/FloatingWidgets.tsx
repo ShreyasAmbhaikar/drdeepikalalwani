@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronUp } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 export const FloatingWidgets = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,11 +42,11 @@ export const FloatingWidgets = () => {
 
       {/* WhatsApp Chat Button */}
       <a
-        href="https://wa.me/919711929529"
+        href={siteConfig.contact.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba56] text-white flex items-center justify-center shadow-xl transition-all duration-300 transform hover:scale-110 cursor-pointer"
-        aria-label="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp with Dr. Deepika Lalwani"
       >
         <svg
           viewBox="0 0 448 512"
@@ -60,3 +61,5 @@ export const FloatingWidgets = () => {
     </div>
   );
 };
+export default FloatingWidgets;
+

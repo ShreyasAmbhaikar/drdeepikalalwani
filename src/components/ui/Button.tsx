@@ -14,9 +14,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = "inline-flex items-center justify-center font-bold transition-all duration-400 ease-in-out rounded-[10px] text-center max-w-full";
     
     const variants = {
-      primary: "bg-primary text-white hover:bg-accent",
-      secondary: "bg-white text-primary hover:bg-primary hover:text-white border border-divider",
-      accent: "bg-accent text-white hover:bg-primary",
+      primary: "gradient-purple-cta text-white shadow-[0_4px_16px_rgba(124,37,184,0.3)] hover:brightness-110 hover:shadow-[0_6px_22px_rgba(124,37,184,0.4)]",
+      secondary: "bg-white text-primary hover:bg-secondary border border-purple-100 shadow-xs",
+      accent: "bg-accent text-white hover:brightness-110 shadow-md",
     };
     
     const sizes = {
