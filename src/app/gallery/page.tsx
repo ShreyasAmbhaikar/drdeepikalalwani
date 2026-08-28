@@ -26,66 +26,38 @@ export default function GalleryPage() {
   const galleryImages: GalleryImage[] = [
     {
       id: 1,
-      src: "/images/gallery-dummy-1.svg",
-      alt: "Pregnancy Care & Exercises Chart at Dr. Deepika Lalwani's Clinic",
-      categoryLabel: "Patient Education",
-      title: "Pregnancy Care & Exercises Chart",
+      src: "/images/gallery/clinic-entrance-arch.webp",
+      alt: "Grand Clinic Entrance and Welcome Gateway at Dr. Deepika Lalwani's Clinic in Kalyani Nagar",
+      categoryLabel: "Clinic Entrance",
+      title: "Clinic Entrance & Welcome Gateway",
     },
     {
       id: 2,
-      src: "/images/gallery-dummy-2.svg",
-      alt: "Consulting Room & Diagnostic Suite at Dr. Deepika Lalwani's Clinic",
-      categoryLabel: "Consulting Suite",
-      title: "Consulting Room & Diagnostic Suite",
+      src: "/images/gallery/clinic-exterior-corridor.webp",
+      alt: "Executive Clinic Corridor and Official Nameplate for Dr. Deepika Lalwani (Nagwani)",
+      categoryLabel: "Clinic Facility",
+      title: "Executive Corridor & Doctor Nameplate",
     },
     {
       id: 3,
-      src: "/images/gallery-dummy-3.svg",
-      alt: "Doctor Consultation Desk at Dr. Deepika Lalwani's Clinic",
-      categoryLabel: "Consulting Suite",
-      title: "Doctor Consultation Desk",
+      src: "/images/gallery/clinic-reception-lobby.webp",
+      alt: "Reception Counter and Executive Lobby at Dr. Deepika Lalwani's Clinic",
+      categoryLabel: "Reception & Lobby",
+      title: "Reception Counter & Executive Lobby",
     },
     {
       id: 4,
-      src: "/images/gallery-dummy-4.svg",
-      alt: "Clinic Facility & Entrance at The Collection by Brahma Corp",
-      categoryLabel: "Clinic Exterior",
-      title: "Clinic Facility & Entrance",
-    },
-    {
-      id: 5,
-      src: "/images/gallery-dummy-5.svg",
-      alt: "Consultation Suite & Patient Examination Area",
-      categoryLabel: "Consulting Suite",
-      title: "Consultation Suite & Patient Examination Area",
-    },
-    {
-      id: 6,
-      src: "/images/gallery-dummy-6.svg",
-      alt: "Comfortable Patient Waiting Lounge",
+      src: "/images/gallery/patient-waiting-lounge.webp",
+      alt: "Comfortable Patient Waiting Lounge and Certifications Wall at Dr. Deepika Lalwani's Clinic",
       categoryLabel: "Waiting Lounge",
       title: "Comfortable Patient Waiting Lounge",
     },
     {
-      id: 7,
-      src: "/images/gallery-dummy-7.svg",
-      alt: "Compassionate Doctor-Patient Interaction",
-      categoryLabel: "Consulting Suite",
-      title: "Compassionate Doctor-Patient Interaction",
-    },
-    {
-      id: 8,
-      src: "/images/gallery-dummy-8.svg",
-      alt: "Newborn Delivery & Maternity Care",
-      categoryLabel: "Patient Care",
-      title: "Newborn Delivery & Maternity Care",
-    },
-    {
-      id: 9,
-      src: "/images/gallery-dummy-9.svg",
-      alt: "Sterile Surgical & Obstetric Suite",
-      categoryLabel: "Patient Care",
-      title: "Sterile Surgical & Obstetric Suite",
+      id: 5,
+      src: "/images/gallery/clinic-building-night-view.webp",
+      alt: "The Collection by Brahma Corp Building Facade with Illuminated Signage at Night",
+      categoryLabel: "Building Exterior",
+      title: "The Collection Building & Illuminated Signage",
     },
   ];
 
@@ -161,6 +133,9 @@ export default function GalleryPage() {
                   {/* Absolute UI overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 flex items-end justify-between">
                     <div>
+                      <span className="inline-block text-[11px] font-bold text-white/90 bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-2 font-onest">
+                        {image.categoryLabel}
+                      </span>
                       <h3 className="text-white font-bold text-[17px] leading-tight font-onest">
                         {image.title}
                       </h3>
@@ -237,8 +212,11 @@ export default function GalleryPage() {
                 />
               </div>
               {/* Description strip at the bottom */}
-              <div className="mt-4 text-center text-white/90 px-4 max-w-[700px] pointer-events-none">
-                <p className="text-[15px] md:text-[18px] font-bold leading-snug font-onest">
+              <div className="mt-4 text-center text-white/90 px-4 max-w-[700px] pointer-events-none flex flex-col items-center gap-1">
+                <span className="text-[12px] font-bold text-white/80 bg-white/15 backdrop-blur-md px-3 py-0.5 rounded-full uppercase tracking-wider font-onest">
+                  {galleryImages[activeImageIndex].categoryLabel}
+                </span>
+                <p className="text-[16px] md:text-[19px] font-bold leading-snug font-onest text-white drop-shadow">
                   {galleryImages[activeImageIndex].title}
                 </p>
               </div>
