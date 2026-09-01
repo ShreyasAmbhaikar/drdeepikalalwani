@@ -98,9 +98,9 @@ export const HeroSection = () => {
                     </svg>
                   ))}
                 </div>
-                <h4 className="text-[14px] font-bold text-primary leading-snug font-onest">
+                <div className="text-[14px] font-bold text-primary leading-snug font-onest">
                   5-Star Rated Clinic
-                </h4>
+                </div>
                 <p className="text-[12px] text-[#555] m-0 leading-relaxed mt-1">
                   Compassionate Clinic Care and Advanced Diagnostics for Women
                 </p>
