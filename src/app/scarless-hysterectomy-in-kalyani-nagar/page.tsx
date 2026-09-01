@@ -25,7 +25,7 @@ export const metadata = {
   title: "Scarless Hysterectomy (NDVH) in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Advanced scarless Non-Descent Vaginal Hysterectomy (NDVH) with zero abdominal cuts by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Kalyani Nagar, Pune.",
   alternates: {
-    canonical: '/scarless-hysterectomy-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/scarless-hysterectomy-in-kalyani-nagar/",
   }
 };
 

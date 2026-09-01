@@ -24,7 +24,7 @@ export const metadata = {
   title: "Comprehensive Pregnancy Care in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Consult Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) for comprehensive antenatal pregnancy care, trimester fetal scans, and natural birth planning in Pune.",
   alternates: {
-    canonical: '/pregnancy-care-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/pregnancy-care-in-kalyani-nagar/",
   }
 };
 

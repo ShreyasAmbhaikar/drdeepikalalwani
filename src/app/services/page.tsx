@@ -19,12 +19,13 @@ import {
   ArrowRight
 } from "lucide-react";
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata = {
   title: "Obstetrics & Gynecology Services in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Explore expert women's healthcare services at Dr. Deepika Lalwani's Clinic in New Kalyani Nagar, Wadgaon Sheri, Pune. Led by Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai), offering normal delivery, PCOD/PCOS care, high-risk pregnancy care, & IUI fertility guidance.",
   alternates: {
-    canonical: "/services/",
+    canonical: "https://drdeepikalalwani.com/services/",
   },
 };
 
@@ -158,8 +159,26 @@ export default function ServicesPage() {
     },
   ];
 
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Obstetrics & Gynecology Services at Dr. Deepika Lalwani's Clinic",
+    "description": "Specialized obstetric, gynecological, laparoscopic, and fertility services in Kalyani Nagar & Wadgaon Sheri, Pune.",
+    "itemListElement": services.map((s, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": s.title,
+      "description": s.desc,
+      "url": `${siteConfig.url}${s.href}`
+    }))
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       <main>
         <PageHeader title="Our Services" breadcrumbs={breadcrumbs} />
 

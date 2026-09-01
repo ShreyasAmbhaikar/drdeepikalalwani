@@ -95,9 +95,9 @@ export const WhyChooseSection = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
+                <h3 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
                   Natural Childbirth Focus
-                </h4>
+                </h3>
                 <p className="text-[13px] text-text leading-relaxed">
                   Dedicated prenatal counseling, labor guidance, and safe vaginal delivery facilitation.
                 </p>
@@ -113,9 +113,9 @@ export const WhyChooseSection = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
+                <h3 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
                   Consultant OBS & Gynae
-                </h4>
+                </h3>
                 <p className="text-[13px] text-text leading-relaxed">
                   MBBS, DGO (Mumbai) with high surgical standards and 10+ years clinical expertise.
                 </p>
@@ -130,9 +130,9 @@ export const WhyChooseSection = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
+                <h3 className="text-[16px] md:text-[17px] font-bold text-primary mb-1">
                   105+ Five-Star Reviews
-                </h4>
+                </h3>
                 <p className="text-[13px] text-text leading-relaxed">
                   Highly rated on Google for patient empathy, transparent advice, and gentle care.
                 </p>

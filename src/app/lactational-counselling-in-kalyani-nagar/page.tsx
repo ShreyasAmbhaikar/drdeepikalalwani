@@ -24,7 +24,7 @@ export const metadata = {
   title: "Lactational Counselling & Breastfeeding Support in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Get compassionate breastfeeding support and lactational counselling in Kalyani Nagar, Pune by Dr. Deepika Lalwani (MBBS, DGO Mumbai). Latch correction, low milk supply, mastitis care.",
   alternates: {
-    canonical: '/lactational-counselling-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/lactational-counselling-in-kalyani-nagar/",
   }
 };
 

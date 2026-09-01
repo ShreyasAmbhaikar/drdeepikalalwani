@@ -22,7 +22,7 @@ export const metadata = {
   title: "Irregular Periods & Menstrual Disorders Care in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Specialized clinical diagnosis and treatment for irregular periods, heavy bleeding (menorrhagia), and severe menstrual pain by Dr. Deepika Lalwani in Pune.",
   alternates: {
-    canonical: '/menstrual-cycle-problems-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/menstrual-cycle-problems-in-kalyani-nagar/",
   }
 };
 

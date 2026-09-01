@@ -22,7 +22,7 @@ export const metadata = {
   title: "Contraception Advice & Family Planning in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Safe contraception advice, Copper T & Mirena IUD insertion, oral birth control pills, and family planning by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Pune.",
   alternates: {
-    canonical: '/contraception-advice-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/contraception-advice-in-kalyani-nagar/",
   }
 };
 

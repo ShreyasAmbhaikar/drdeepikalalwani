@@ -27,7 +27,7 @@ export const metadata = {
   title: "Normal Delivery Care in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Consult Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) for safe natural normal delivery, painless labor, VBAC, and compassionate maternity care in Kalyani Nagar, Pune.",
   alternates: {
-    canonical: '/normal-delivery-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/normal-delivery-in-kalyani-nagar/",
   }
 };
 

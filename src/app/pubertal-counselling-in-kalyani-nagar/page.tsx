@@ -22,7 +22,7 @@ export const metadata = {
   title: "Pubertal Counselling & Adolescent Health in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Supportive pubertal counselling, menarche education, adolescent PCOS care, and HPV vaccination guidance by Dr. Deepika Lalwani in Pune.",
   alternates: {
-    canonical: '/pubertal-counselling-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/pubertal-counselling-in-kalyani-nagar/",
   }
 };
 

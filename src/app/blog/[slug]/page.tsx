@@ -6,6 +6,7 @@ import PageHeader from "@/components/landing/PageHeader";
 import { BLOG_POSTS } from "@/lib/blog-data";
 import { Clock, User, ArrowRight, Search, Heart } from "lucide-react";
 import ShareButton from "@/components/ui/ShareButton";
+import { siteConfig } from "@/lib/site-config";
 
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({
@@ -18,13 +19,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) return {};
 
-  const baseUrl = "https://yourdomain.com";
+  const baseUrl = siteConfig.url;
 
   return {
     title: `${post.title} | Dr. Deepika Lalwani's Clinic`,
     description: post.excerpt,
     alternates: {
-      canonical: `/blog/${post.slug}/`,
+      canonical: `${baseUrl}/blog/${post.slug}/`,
     },
     openGraph: {
       title: `${post.title} | Dr. Deepika Lalwani's Clinic`,
@@ -52,11 +53,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const isBlogEnabled = false;
-  if (!isBlogEnabled) {
-    notFound();
-  }
-
   const { slug } = await params;
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   
@@ -71,11 +67,37 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   ];
 
   const recentPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
-
   const popularTags = Array.from(new Set(BLOG_POSTS.flatMap(post => post.tags))).slice(0, 8);
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `${siteConfig.url}${post.image}`,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "jobTitle": post.authorRole,
+    },
+    "publisher": {
+      "@type": "MedicalClinic",
+      "name": "Dr. Deepika Lalwani's Clinic",
+      "url": siteConfig.url,
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/blog/${post.slug}/`,
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <main>
         <PageHeader title={post.category} breadcrumbs={breadcrumbs} />
 

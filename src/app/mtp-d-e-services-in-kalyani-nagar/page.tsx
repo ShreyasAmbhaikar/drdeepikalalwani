@@ -24,7 +24,7 @@ export const metadata = {
   title: "Confidential MTP & D&E Services in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Safe, legal, and strictly confidential Medical Termination of Pregnancy (MTP) and D&E by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Kalyani Nagar, Pune.",
   alternates: {
-    canonical: '/mtp-d-e-services-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/mtp-d-e-services-in-kalyani-nagar/",
   }
 };
 

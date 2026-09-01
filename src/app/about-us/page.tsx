@@ -21,7 +21,7 @@ export const metadata = {
     "The Collection by Brahma Corp Clinic"
   ],
   alternates: {
-    canonical: "/about-us/",
+    canonical: "https://drdeepikalalwani.com/about-us/",
   },
   openGraph: {
     title: "About Dr. Deepika Lalwani | Senior Gynecologist & Obstetrician in Kalyani Nagar Pune",

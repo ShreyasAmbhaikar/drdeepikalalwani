@@ -135,9 +135,9 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => {
 
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1.5 flex-wrap mb-0.5">
-            <h4 className="text-[14.5px] md:text-[15px] font-bold text-white leading-tight">
+            <p className="text-[14.5px] md:text-[15px] font-bold text-white leading-tight">
               {item.name}
-            </h4>
+            </p>
             {item.isLocalGuide && (
               <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-[#FFB800]/15 text-[#FFC107] border border-[#FFB800]/30 shadow-xs">
                 <svg className="w-2.5 h-2.5 fill-[#FFC107]" viewBox="0 0 24 24">

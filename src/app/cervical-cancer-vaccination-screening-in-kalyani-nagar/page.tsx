@@ -22,7 +22,7 @@ export const metadata = {
   title: "Cervical Cancer Screening & HPV Vaccine in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Cervical cancer prevention with Pap Smears, HPV DNA co-testing, and HPV vaccines (Gardasil 9 & Cervavac) by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Pune.",
   alternates: {
-    canonical: '/cervical-cancer-vaccination-screening-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/cervical-cancer-vaccination-screening-in-kalyani-nagar/",
   }
 };
 

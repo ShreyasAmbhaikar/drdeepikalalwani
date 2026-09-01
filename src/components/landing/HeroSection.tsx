@@ -24,21 +24,21 @@ export const HeroSection = () => {
             {/* Stats Row */}
             <div className="grid grid-cols-3 gap-4 border-t border-[#E6E0D5] pt-[24px] mb-[30px] max-w-[480px]">
               <div>
-                <h3 className="text-[32px] md:text-[36px] font-extrabold text-primary leading-tight font-onest">
+                <div className="text-[32px] md:text-[36px] font-extrabold text-primary leading-tight font-onest">
                   <Counter end={10} suffix="+" />
-                </h3>
+                </div>
                 <p className="text-[13px] md:text-[14px] text-[#6B655C] font-medium mt-1">Years of experience</p>
               </div>
               <div>
-                <h3 className="text-[32px] md:text-[38px] font-extrabold text-primary leading-tight font-onest">
+                <div className="text-[32px] md:text-[38px] font-extrabold text-primary leading-tight font-onest">
                   <Counter end={5} suffix=".0" />
-                </h3>
+                </div>
                 <p className="text-[13px] md:text-[14px] text-[#6B655C] font-medium mt-1">Google rating</p>
               </div>
               <div>
-                <h3 className="text-[32px] md:text-[38px] font-extrabold text-primary leading-tight font-onest">
+                <div className="text-[32px] md:text-[38px] font-extrabold text-primary leading-tight font-onest">
                   <Counter end={105} suffix="+" />
-                </h3>
+                </div>
                 <p className="text-[13px] md:text-[14px] text-[#6B655C] font-medium mt-1">Google reviews</p>
               </div>
             </div>

@@ -27,7 +27,7 @@ export const metadata = {
   title: "LSCS (Caesarean Section) in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Consult Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) for planned and emergency LSCS Caesarean delivery, cosmetic closure, and high-risk maternity care in Pune.",
   alternates: {
-    canonical: '/lscs-caesarean-section-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/lscs-caesarean-section-in-kalyani-nagar/",
   }
 };
 

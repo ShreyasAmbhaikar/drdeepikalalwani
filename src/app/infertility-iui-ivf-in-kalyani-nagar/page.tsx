@@ -28,7 +28,7 @@ export const metadata = {
   title: "Infertility, IUI & IVF Support in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Consult Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) for comprehensive female fertility evaluation, ovulation induction, IUI, and IVF support in Pune.",
   alternates: {
-    canonical: '/infertility-iui-ivf-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/infertility-iui-ivf-in-kalyani-nagar/",
   }
 };
 

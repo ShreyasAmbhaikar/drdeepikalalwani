@@ -22,7 +22,7 @@ export const metadata = {
   title: "Pelvic Infection & PID Treatment in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Accurate clinical diagnosis and targeted treatment for Pelvic Inflammatory Disease (PID), chronic vaginal infections, and pelvic pain by Dr. Deepika Lalwani in Pune.",
   alternates: {
-    canonical: '/pelvic-infections-treatment-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/pelvic-infections-treatment-in-kalyani-nagar/",
   }
 };
 

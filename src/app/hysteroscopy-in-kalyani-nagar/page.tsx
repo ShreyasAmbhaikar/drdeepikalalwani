@@ -24,7 +24,7 @@ export const metadata = {
   title: "Diagnostic & Operative Hysteroscopy in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Advanced hysteroscopy for uterine polyps, fibroids, Asherman's syndrome, and IVF cavity optimization by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Pune.",
   alternates: {
-    canonical: '/hysteroscopy-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/hysteroscopy-in-kalyani-nagar/",
   }
 };
 

@@ -41,6 +41,7 @@ export default function PageHeader({ title, breadcrumbs, bgImage }: PageHeaderPr
       <div className="container mx-auto px-4 max-w-[1300px] relative z-10">
         <div className="flex flex-col items-center justify-center text-center">
           <AnimatedHeading
+            as="h1"
             text={title}
             className="text-[36px] md:text-[48px] lg:text-[56px] font-extrabold text-white leading-[1.15] mb-5 capitalize drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] font-onest"
           />

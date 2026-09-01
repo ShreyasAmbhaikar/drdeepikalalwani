@@ -21,7 +21,7 @@ export const metadata = {
   title: "Best Menstrual Hygiene & Health Clinic in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani's Clinic",
   description: "Learn safe menstrual hygiene, treat abnormal bleeding or severe cramps (dysmenorrhea), and get expert hormonal advice under Dr. Deepika Lalwani at Dr. Deepika Lalwani's Clinic in Kalyani Nagar & Wadgaon Sheri, Pune. Book today.",
   alternates: {
-    canonical: '/menstrual-hygiene-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/menstrual-hygiene-in-kalyani-nagar/",
   }
 };
 
@@ -148,8 +148,41 @@ export default function MenstrualHygienePage() {
     }
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Menstrual Hygiene & Health Management",
+        "description": "Comprehensive menstrual hygiene guidance, period disorder management, and infection care by Dr. Deepika Lalwani in Kalyani Nagar & Wadgaon Sheri, Pune.",
+        "procedureType": "NoninvasiveProcedure",
+        "performer": {
+          "@type": "Physician",
+          "name": "Dr. Deepika Lalwani(Nagwani)",
+          "jobTitle": "Consultant Obstetrician & Gynecologist",
+          "medicalSpecialty": ["Obstetrics", "Gynecology", "ReproductiveHealth"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <main>
         <PageHeader title="Menstrual Hygiene & Health" breadcrumbs={breadcrumbs} bgImage="/images/maternity_header.webp" />
 

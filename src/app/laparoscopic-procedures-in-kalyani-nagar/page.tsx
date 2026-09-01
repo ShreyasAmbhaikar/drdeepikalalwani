@@ -23,7 +23,7 @@ export const metadata = {
   title: "Laparoscopic Gynecologist in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Advanced gynecological laparoscopic keyhole surgeries by Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) in Kalyani Nagar, Pune. Ovarian cyst, fibroid, endometriosis care.",
   alternates: {
-    canonical: '/laparoscopic-procedures-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/laparoscopic-procedures-in-kalyani-nagar/",
   }
 };
 

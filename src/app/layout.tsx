@@ -21,6 +21,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Dr. Deepika Lalwani(Nagwani) | Best Gynecologist in Kalyani Nagar & Wadgaon Sheri, Pune",
   description: "Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) is a top lady gynecologist and obstetrician in Kalyani Nagar & Wadgaon Sheri, Pune. Compassionate care in normal delivery, high-risk pregnancy, PCOD/PCOS, infertility, & laparoscopic surgery.",
   keywords: siteConfig.keywords,

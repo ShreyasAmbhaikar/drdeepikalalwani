@@ -7,17 +7,14 @@ export const metadata = {
   title: "Latest Health Articles & Insights | Dr. Deepika Lalwani's Clinic",
   description: "Stay updated with expert health articles on pregnancy care, gynecological screening, normal delivery, and wellness tips from Dr. Deepika Lalwani.",
   alternates: {
-    canonical: "/blog/",
+    canonical: "https://drdeepikalalwani.com/blog/",
   },
 };
 
 export default function BlogListPage() {
-  notFound();
-
-  /*
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Blog Insights" },
+    { label: "Blog" },
   ];
 
   return (
@@ -34,6 +31,5 @@ export default function BlogListPage() {
       </main>
     </>
   );
-  */
 }
 

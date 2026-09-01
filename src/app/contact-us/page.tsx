@@ -7,7 +7,7 @@ export const metadata = {
   title: "Contact Dr. Deepika Lalwani(Nagwani) | Gynecologist in Kalyani Nagar Pune",
   description: "Get in touch with Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai) at Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri, Pune. Call +91 9359264895 for appointments.",
   alternates: {
-    canonical: "/contact-us/",
+    canonical: "https://drdeepikalalwani.com/contact-us/",
   },
 };
 
@@ -17,8 +17,32 @@ export default function ContactUsPage() {
     { label: "Contact Us" },
   ];
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Dr. Deepika Lalwani(Nagwani)",
+    "description": "Contact information and clinic appointment scheduling for Dr. Deepika Lalwani's Clinic in Kalyani Nagar & Wadgaon Sheri, Pune.",
+    "mainEntity": {
+      "@type": "MedicalClinic",
+      "name": "Dr. Deepika Lalwani's Clinic",
+      "telephone": siteConfig.contact.phoneRaw,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tower, 2nd Floor, Lalwani's Clinic The collection by Brahma Corp, W10, Shop no. 219, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411014",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <main>
         <PageHeader title="Contact Us" breadcrumbs={breadcrumbs} />
 

@@ -23,7 +23,7 @@ export const metadata = {
   title: "Best Family Planning Center in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani's Clinic",
   description: "Get empathetic, professional family planning, contraceptive advice, and pre-conception counseling under Dr. Deepika Lalwani at Dr. Deepika Lalwani's Clinic in Kalyani Nagar & Wadgaon Sheri, Pune. Book today.",
   alternates: {
-    canonical: '/family-planning-center-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/family-planning-center-in-kalyani-nagar/",
   }
 };
 
@@ -125,8 +125,41 @@ export default function FamilyPlanningCenterPage() {
     }
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Family Planning & Contraception Services",
+        "description": "Comprehensive spacing and permanent family planning advice including IUD (Copper-T, Mirena) insertion, hormonal pills, and pre-conception counselling in Kalyani Nagar & Wadgaon Sheri, Pune.",
+        "procedureType": "NoninvasiveProcedure",
+        "performer": {
+          "@type": "Physician",
+          "name": "Dr. Deepika Lalwani(Nagwani)",
+          "jobTitle": "Consultant Obstetrician & Gynecologist",
+          "medicalSpecialty": ["Obstetrics", "Gynecology", "ReproductiveHealth"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       <main>
         <PageHeader title="Family Planning Center" breadcrumbs={breadcrumbs} bgImage="/images/maternity_header.webp" />
 

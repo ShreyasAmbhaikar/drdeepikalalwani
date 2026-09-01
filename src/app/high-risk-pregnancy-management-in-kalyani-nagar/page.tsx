@@ -23,7 +23,7 @@ export const metadata = {
   title: "High-Risk Pregnancy Care in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Specialized high-risk pregnancy management in Kalyani Nagar, Pune by Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp). Expert care for diabetes, BP, twins, and recurrent loss.",
   alternates: {
-    canonical: '/high-risk-pregnancy-management-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/high-risk-pregnancy-management-in-kalyani-nagar/",
   }
 };
 

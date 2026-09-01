@@ -13,7 +13,7 @@ export const metadata = {
   description: "Consult Dr. Deepika Lalwani(Nagwani) (MBBS, DGO Mumbai), Consultant Obstetrician & Gynecologist with 10+ years clinical experience at The Collection by Brahma Corp, New Kalyani Nagar, Wadgaon Sheri, Pune. Specializing in normal delivery, high-risk pregnancy, PCOS care, & fertility evaluation. Book an appointment today.",
   keywords: siteConfig.keywords,
   alternates: {
-    canonical: "/best-gynecologist-in-kalyani-nagar/",
+    canonical: "https://drdeepikalalwani.com/best-gynecologist-in-kalyani-nagar/",
   },
   openGraph: {
     title: "Best Gynecologist in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani(Nagwani)",

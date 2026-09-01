@@ -28,7 +28,7 @@ export const metadata = {
   title: "PCOD & PCOS Care in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Comprehensive PCOD & PCOS management, insulin resistance reversal, and hormonal balance care by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Pune.",
   alternates: {
-    canonical: '/pcod-pcos-care-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/pcod-pcos-care-in-kalyani-nagar/",
   }
 };
 

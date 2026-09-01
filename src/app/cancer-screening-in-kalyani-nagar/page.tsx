@@ -22,7 +22,7 @@ export const metadata = {
   title: "Gynaecological & Breast Cancer Screening in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Painless Pap smears, HPV DNA co-testing, clinical breast exams, and pelvic ultrasound screenings by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Pune.",
   alternates: {
-    canonical: '/cancer-screening-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/cancer-screening-in-kalyani-nagar/",
   }
 };
 

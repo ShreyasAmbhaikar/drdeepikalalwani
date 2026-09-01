@@ -23,7 +23,7 @@ export const metadata = {
   title: "Pre-Conceptional Counselling in Kalyani Nagar & Wadgaon Sheri | Dr. Deepika Lalwani",
   description: "Plan a safe pregnancy with expert Pre-Conceptional Counselling by Dr. Deepika Lalwani (MBBS, DGO Mumbai, 10+ yrs exp) in Kalyani Nagar, Pune. Genetic, hormonal & nutrition screening.",
   alternates: {
-    canonical: '/pre-conceptional-counselling-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/pre-conceptional-counselling-in-kalyani-nagar/",
   }
 };
 

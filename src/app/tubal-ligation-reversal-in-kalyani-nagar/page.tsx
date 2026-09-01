@@ -23,7 +23,7 @@ export const metadata = {
   title: "Tubal Ligation & Tubal Reversal in Kalyani Nagar | Dr. Deepika Lalwani",
   description: "Laparoscopic tubal ligation (tubectomy) and microsurgical tubal re-anastomosis by Dr. Deepika Lalwani (MBBS, DGO Mumbai) in Kalyani Nagar, Pune.",
   alternates: {
-    canonical: '/tubal-ligation-reversal-in-kalyani-nagar/',
+    canonical: "https://drdeepikalalwani.com/tubal-ligation-reversal-in-kalyani-nagar/",
   }
 };
 
